@@ -931,6 +931,10 @@ spriteTypes = {
 		name = "GFX_goal_BUL_flags"
 		texturefile = "gfx/interface/goals/bul/goal_BUL_flags.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_BUL_appeal_to_west"
+		texturefile = "gfx/interface/goals/bul/r56_goal_BUL_appeal_to_west.dds"
+	}
 
 ###------> CAN <><> <><> <><> <><> <><>
 	SpriteType = {

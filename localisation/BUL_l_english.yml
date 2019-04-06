@@ -14,9 +14,15 @@ l_english:
  BUL_tsar_s_authority:0 "Tsar's Authority"
  idea_state_security_ministry:0 "State Security Ministry"
  idea_communist_central_management:0 "Economic Plannification Bureau"
+ BUL_volunteers:0 "Bulgarian International Volunteer Forces"
+ BUL_youth_league:0 "Communist Youth League"
+ BUL_great_depression:0 "Great Depression"
+ BUL_tsar_boris_iii:0 "Tsar Boris III"
 
- #flags
+ #tooltips
  vladimir_zaimov_killed:0 "Vladimir Zaimov Executed"
+ BUL_agrarian_party_tooltip:0 "An Anti-Tsarist Socialist Party"
+ BUL_democratic_party_tooltip:0 "A Pro-Tsarist Conservative Party"
 
  #advisors
  BUL_konstantin_lukash:0 "Konstantin Lukash"
@@ -92,10 +98,14 @@ l_english:
  BUL_social_reforms:0 "Social Reforms"
  BUL_nationalizations:0 "Centralized Economic Planning"
  BUL_communist_heavy_industry:0 "Communist Heavy Industry"
- BUL_peoples_courts:0 "People's Purge"
  BUL_army_reorganization:0 "Army Reorganization"
+ BUL_communist_volunteers:0 "Create The Bulgarian International Forces"
+ BUL_communist_youth:0 "Communist Youth League"
+ BUL_restore_spirit_tarnovo_constitution:0 "Remind The People Of The Tarnovo Constitution"
+ BUL_support_multipartism:0 "Support Multipartism"
+ BUL_appeal_to_the_west_democracies:0 "Appeal To The West Democracies"
+ BUL_voting_concessions:0 "Voting Concessions"
  BUL_lukov_rearmement_plan:0 "Lukov Rearmement Plan"
- BUL_restore_spirit_tarnovo_constitution:0 "Restore the Spirit of the Tarnovo Constitution"
  BUL_summit_with_balkan_entente:0 "Summit with the Balkan Entente"
  BUL_expand_the_varna_shipyards:0 "Expand the Varna Shipyards"
  BUL_heavy_vessels:0 "Heavy Vessels"
@@ -112,7 +122,11 @@ l_english:
  BUL_torpedo_based_navy:0 "Torpedo Based Navy"
  BUL_naval_bomber_focus:0 "Flying Torpedoes"
 
-
+#parties
+BUL_democratic_party:0 "DP"
+BUL_democratic_party_long:0 "Demokraticheska partia"
+BUL_agrarian_party:0 "ZS"
+BUL_agrarian_party_long:0 "Zemedelski Sayuz"
 
 #Technology
  BUL_motorized_equipment_1:0 "Fiat 626"
@@ -263,3 +277,8 @@ l_english:
   axis_minors_bulgaria.26.t:0 "Loss of Foreign Expertise"
   axis_minors_bulgaria.26.desc:0 "Now that we have severed our ties with our old allies, we can no longer gain their manufacturing advices."
   axis_minors_bulgaria.26.a:0 "It was expected."
+
+  axis_minors_bulgaria.27.t:0 "Elections"
+  axis_minors_bulgaria.27.desc:0 "The Tsar has recently given the population voting rights and announced an election to decide the people's rights,after the results came in it was clear that the radical extremist parties had lost and it came down to a few moderate parties,who won?."
+  axis_minors_bulgaria.27.a:0 "The Democratic Party Wins"
+  axis_minors_bulgaria.27.b:0 "The Agrarian Party Wins"

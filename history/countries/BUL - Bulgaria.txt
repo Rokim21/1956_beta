@@ -4,6 +4,10 @@ oob = "BUL_1936"
 
 add_ideas = {
 	volunteers_only
+	BUL_great_depression
+	BUL_shattered_militarism
+	BUL_fledgeling_military_industry
+	BUL_tsar_boris_iii
 }
 
 set_technology = {
