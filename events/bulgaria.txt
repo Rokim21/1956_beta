@@ -1094,7 +1094,6 @@ country_event = {
 			}
 		}
 
-		custom_effect_tooltip = BUL_democratic_party_tooltip
 		set_politics = { ruling_party = democratic elections_allowed = yes }
 		set_country_flag = BUL_democrats_in_power
 		create_country_leader = {
@@ -1108,8 +1107,8 @@ country_event = {
         }
       set_party_name = {
 		    ideology = democratic
-		    long_name = BUL_democratic_party_long
-		    name = BUL_democratic_party
+		    long_name = BUL_democrat_party_long
+		    name = BUL_democrat_party
 		  }
 			add_popularity = {
 				ideology = democratic
@@ -1124,8 +1123,6 @@ country_event = {
 					factor = 50
 				}
 			}
-
-			custom_effect_tooltip = BUL_agrarian_party_tooltip
 			remove_ideas = BUL_tsar_boris_iii
 			add_political_power = 200
 		  set_politics = { ruling_party = democratic elections_allowed = yes }

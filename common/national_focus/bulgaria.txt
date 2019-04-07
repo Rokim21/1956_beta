@@ -74,7 +74,7 @@ focus_tree = {
 		icon = GFX_goal_secret_police_red
 		prerequisite = { focus = BUL_revoke_censorship_communist_material }
 		relative_position_id = BUL_revoke_censorship_communist_material
-		x = -2
+		x = -3
 		y = 1
 		cost = 7.14285714
 
@@ -257,7 +257,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			GRE = {
-				country_event = axis_minors_bulgaria.1
+				country_event = generic.5
 			}
 		}
 	}
@@ -267,7 +267,7 @@ focus_tree = {
 		icon = GFX_goal_BUL_befriend_commie_ROM
 		prerequisite = { focus = BUL_invite_greece_communism }
 		relative_position_id = BUL_invite_greece_communism
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 
@@ -288,7 +288,7 @@ focus_tree = {
 
 		completion_reward = {
 			ROM = {
-				country_event = axis_minors_bulgaria.1
+			  country_event = generic.5
 			}
 		}
 	}
@@ -298,7 +298,7 @@ focus_tree = {
 		icon = GFX_goal_befriend_communist_ALB
 		prerequisite = { focus = BUL_invite_greece_communism }
 		relative_position_id = BUL_invite_greece_communism
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 
@@ -319,7 +319,7 @@ focus_tree = {
 
 		completion_reward = {
 			ALB = {
-				country_event = axis_minors_bulgaria.1
+			  country_event = generic.5
 			}
 		}
 	}
@@ -670,7 +670,7 @@ focus = {
 		}
 
 	completion_reward = {
-	  country_event = { id = axis_minors_bulgaria.27 days = 5 }
+	  country_event = { id = axis_minors_bulgaria.27 days = 1 }
 	}
 }
 
