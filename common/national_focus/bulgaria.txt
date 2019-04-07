@@ -54,7 +54,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-		  has_government = communism
 		 }
 
 
@@ -115,7 +114,7 @@ focus_tree = {
 		bypass = {
       has_global_flag = sov_no_pact
 		}
-		
+
 		completion_reward = {
 			SOV = {
 				add_opinion_modifier = {
@@ -205,7 +204,7 @@ focus_tree = {
 		relative_position_id = BUL_rally_the_proletariat
 		x = -2
 		y = 1
-		cost = 3
+		cost = 5
 
 		available = {
 			has_dlc = "Death or Dishonor"
@@ -228,6 +227,99 @@ focus_tree = {
 			}
 			BUL = {
 				set_rule = { can_create_factions = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_invite_greece_communism
+		icon = GFX_goal_BUL_befriend_commie_GRE
+		prerequisite = { focus = BUL_balkan_revolution }
+		relative_position_id = BUL_balkan_revolution
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {
+			has_dlc = "Death or Dishonor"
+			has_government = communism
+			GRE = {
+				has_government = communism
+				NOT = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+			}
+
+		}
+		bypass = {
+		  	GRE = {has_completed_focus = GRE_invite_bulgaria }
+		}
+		completion_reward = {
+			GRE = {
+				country_event = axis_minors_bulgaria.1
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_invite_romania_communism
+		icon = GFX_goal_BUL_befriend_commie_ROM
+		prerequisite = { focus = BUL_invite_greece_communism }
+		relative_position_id = BUL_invite_greece_communism
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+			has_dlc = "Death or Dishonor"
+			has_government = communism
+			ROM = {
+				has_government = communism
+				NOT = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+			}
+
+		}
+		bypass = {
+		  }
+
+		completion_reward = {
+			ROM = {
+				country_event = axis_minors_bulgaria.1
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_invite_albania_communism
+		icon = GFX_goal_befriend_communist_ALB
+		prerequisite = { focus = BUL_invite_greece_communism }
+		relative_position_id = BUL_invite_greece_communism
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+			has_dlc = "Death or Dishonor"
+			has_government = communism
+			ALB = {
+				has_government = communism
+				NOT = {
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+			}
+
+		}
+		bypass = {
+		  }
+
+		completion_reward = {
+			ALB = {
+				country_event = axis_minors_bulgaria.1
 			}
 		}
 	}

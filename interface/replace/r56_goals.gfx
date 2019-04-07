@@ -935,6 +935,14 @@ spriteTypes = {
 		name = "GFX_goal_BUL_appeal_to_west"
 		texturefile = "gfx/interface/goals/bul/r56_goal_BUL_appeal_to_west.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_BUL_befriend_commie_GRE"
+		texturefile = "gfx/interface/goals/bul/r56_goal_BUL_befriend_commie_GRE.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_BUL_befriend_commie_ROM"
+		texturefile = "gfx/interface/goals/bul/r56_goal_BUL_befriend_commie_ROM.dds"
+	}
 
 ###------> CAN <><> <><> <><> <><> <><>
 	SpriteType = {

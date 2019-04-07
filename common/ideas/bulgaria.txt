@@ -16,11 +16,11 @@ country = {
 	  removal_cost = -1
 
 	  modifier = {
-		  aircraft_manufacturer_cost_factor = -0.50
-		  tank_manufacturer_cost_factor = -0.50
-		  industrial_concern_cost_factor = -0.50
-		  naval_manufacturer_cost_factor = -0.50
-		  materiel_manufacturer_cost_factor = -0.50
+		  aircraft_manufacturer_cost_factor = -0.30
+		  tank_manufacturer_cost_factor = -0.30
+		  industrial_concern_cost_factor = -0.30
+		  naval_manufacturer_cost_factor = -0.30
+		  materiel_manufacturer_cost_factor = -0.30
 		  industrial_capacity_factory = 0.1
 	  }
   }

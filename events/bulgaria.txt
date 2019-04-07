@@ -1095,6 +1095,8 @@ country_event = {
 		}
 
 		custom_effect_tooltip = BUL_democratic_party_tooltip
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+		set_country_flag = BUL_democrats_in_power
 		create_country_leader = {
             name = "Nikola Mushanov"
             desc = "POLITICS_NIKOLA_MUSHANOV_DESC"
@@ -1126,6 +1128,8 @@ country_event = {
 			custom_effect_tooltip = BUL_agrarian_party_tooltip
 			remove_ideas = BUL_tsar_boris_iii
 			add_political_power = 200
+		  set_politics = { ruling_party = democratic elections_allowed = yes }
+			set_country_flag = BUL_agrarians_in_power
 						create_country_leader = {
 	            name = "Nikola Petkov"
 	            desc = "POLITICS_NIKOLA_PETKOV_DESC"
