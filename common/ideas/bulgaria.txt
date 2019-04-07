@@ -49,9 +49,9 @@ country = {
 
 
     allowed = {
+      tag = BUL
       NOT = {
         has_government = communism
-        tag = bul
       }
     }
 
@@ -98,14 +98,15 @@ country = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_SOV_revolutionized_industry
+			picture = SOV_revolutionized_industry
 
 			modifier = {
 
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
-           }
+    }
+
 		BUL_developing_military_industry = {
 
 			allowed = {
@@ -133,7 +134,7 @@ country = {
 			picture = GFX_goal_tfv_strengthen_commonwealth_ties
 
 			modifier = {
-			    consumer_goods_factor = -0.03
+			  consumer_goods_factor = -0.03
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.10
 			}
