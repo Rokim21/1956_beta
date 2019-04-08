@@ -1147,3 +1147,21 @@ country_event = {
 				}
 	   }
 	}
+
+	country_event = {
+		id = axis_minors_bulgaria.28
+		title = axis_minors_bulgaria.28.t
+		desc = axis_minors_bulgaria.28.d
+		picture = GFX_report_event_generic_sign_treaty1
+
+		is_triggered_only = yes
+
+		option = {
+		    name = axis_minors_bulgaria.28.a
+
+			set_politics = { ruling_party = democratic elections_allowed = no }
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+	    }

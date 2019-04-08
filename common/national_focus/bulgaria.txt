@@ -197,6 +197,35 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = BUL_soviet_theorists
+		icon = GFX_goal_soviet_military_advisors
+		prerequisite = { focus = BUL_ties_with_ussr }
+		relative_position_id = BUL_ties_with_ussr
+		x = 0
+		y = 1
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_government = communism
+			SOV = {
+				is_in_faction_with ROOT
+				exists = yes
+				has_capitulated = no
+				has_government = communism
+			}
+		}
+
+		completion_reward = {
+		  add_command_power = 20
+		  custom_effect_tooltip = available_theorist
+		  show_ideas_tooltip = BUL_mikhail_tukhachevsky # mass assault theorist		}
+	}
+
 	focus = {
 		id = BUL_balkan_revolution
 		icon = GFX_goal_befriend_communist_YUG
@@ -657,22 +686,49 @@ focus_tree = {
 
 focus = {
 	id = BUL_voting_concessions
-	icon = GFX_sca_focus_liberty
+	icon = GFX_goal_fascism_banned
 	prerequisite = { focus = BUL_support_multipartism }
 	prerequisite = { focus = BUL_appeal_to_the_west_democracies }
 	relative_position_id = BUL_restore_spirit_tarnovo_constitution
 	x = 0
 	y = 2
-	cost = 10
+	cost = 5
 
 	available = {
-	  democratic > 0.45
-		}
+	  democratic > 0.40
+	}
 
 	completion_reward = {
-	  country_event = { id = axis_minors_bulgaria.27 days = 1 }
+	  country_event = { id = axis_minors_bulgaria.28 }
 	}
 }
+
+focus = {
+	id = BUL_release_the_opposition
+	icon = GFX_sca_focus_generic_political
+	prerequisite = { focus = BUL_voting_concessions }
+	relative_position_id = BUL_voting_concessions
+	x = 0
+	y = 2
+	cost = 5
+
+	available = {
+	  has_government = democratic
+	}
+
+	completion_reward = {
+	  add_stability = 0.05
+	  add_popularity = {
+		  ideology = communism
+		  popularity = 0.05
+	  }
+		add_popularity = {
+		  ideology = democratic
+		  popularity = 0.05
+	  }
+	}
+}
+
 
 	focus = {
 		id = BUL_assert_monarchic_power

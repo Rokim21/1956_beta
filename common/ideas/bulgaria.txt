@@ -1467,6 +1467,24 @@ country = {
 			traits = { air_warfare_theorist }
 		}
 
+    BUL_mikhail_tukhachevsky = {
+
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			available = {
+        has_completed_focus = BUL_soviet_theorists
+
+			}
+
+			cost = 60
+
+			research_bonus = {
+				cat_mass_assault = 0.10
+			}
+
 #		BUL_georgi_petsov = {
 #
 #			picture = generic_navy_europe_1

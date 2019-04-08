@@ -157,12 +157,12 @@ create_country_leader = {
 		#
 	}
 }
-create_country_leader = { #alternative democrat, loyal to the tsar. Could be an interesting path for constitutional monarchy postwar rather than a republic.
-	name = "Nikola Mushanov"
-	desc = "POLITICS_ZIVCO_TOPALOVIC_DESC"
-	picture = "r56_portrait_BUL_Nikola_Mushanov.tga"
+create_country_leader = {
+	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "Portrait_Bulgaria_Boris_III.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = conservatism
 	traits = {
 		#
 	}
