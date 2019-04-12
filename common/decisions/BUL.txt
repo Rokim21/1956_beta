@@ -1,0 +1,139 @@
+BUL_agrarian_land_reforms_category = {
+
+	BUL_ownership_reform = {
+
+		icon = GFX_decision_generic_decision
+
+		available = {
+			tag = BUL
+			has_completed_focus = BUL_initiate_land_reforms
+      has_political_power > 29
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		days_remove = 35
+
+		visible = {
+      has_completed_focus = BUL_initiate_land_reforms
+	  }
+
+		remove_effect = {
+      add_stability = 0.05
+			211 = {
+			  add_extra_state_shared_building_slots = 1
+		  }
+			212 = {
+			  add_extra_state_shared_building_slots = 1
+		  }
+    }
+		complete_effect = {
+      add_political_power = -30
+      set_country_flag = BUL_land_ownership_reformed
+		}
+	}
+
+  BUL_tax_reform = {
+
+    icon = GFX_decision_generic_decision
+
+    available = {
+      tag = BUL
+      has_completed_focus = BUL_initiate_land_reforms
+      has_country_flag = BUL_land_ownership_reformed
+    }
+
+    fire_only_once = yes
+
+    ai_will_do = {
+      factor = 30
+    }
+
+    days_remove = 20
+
+    visible = {
+      has_country_flag = BUL_land_ownership_reformed
+      tag = BUL
+      has_completed_focus = BUL_initiate_land_reforms
+    }
+
+    remove_effect = {
+      add_ideas = BUL_tax_reforms
+
+    complete_effect = {
+    }
+  }
+
+  BUL_agrarian_welfare = {
+
+  icon = GFX_decision_generic_decision
+
+  available = {
+    tag = BUL
+    has_completed_focus = BUL_initiate_land_reforms
+    has_country_flag = BUL_land_ownership_reformed
+  }
+
+  fire_only_once = yes
+
+  ai_will_do = {
+    factor = 30
+  }
+
+  days_remove = 20
+
+  visible = {
+    has_country_flag = BUL_land_ownership_reformed
+    tag = BUL
+    has_completed_focus = BUL_initiate_land_reforms
+  }
+
+    remove_effect = {
+      add_ideas = BUL_peasant_welfare
+   }
+
+   complete_effect = {
+   }
+  }
+
+  BUL_modernize_agricultural_technology = {
+
+		icon = GFX_decision_generic_decision
+
+		available = {
+			tag = BUL
+			has_completed_focus = BUL_initiate_land_reforms
+      has_political_power > 49
+      num_of_factories > 24
+      NOT = {
+        has_idea = BUL_great_depression
+      }
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		days_remove = 50
+
+		visible = {
+      has_completed_focus = BUL_initiate_land_reforms
+      tag = BUL
+      has_country_flag = BUL_land_ownership_reformed
+	  }
+
+		remove_effect = {
+      add_ideas = BUL_mechanized_agriculture
+    }
+
+		complete_effect = {
+      add_political_power = -50
+		}
+	}
+ }

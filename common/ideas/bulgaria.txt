@@ -47,6 +47,7 @@ country = {
 
   BUL_tsar_boris_iii = {
 
+    picture = GFX_idea_BUL_tsar_boris_iii
 
     allowed = {
       tag = BUL
@@ -202,10 +203,10 @@ country = {
 			modifier = {
 				democratic_drift = -0.20
 				fascism_drift = -0.20
-                communism_drift = -0.20
+        communism_drift = -0.20
 				foreign_subversive_activites = -0.50
 			}
-        }
+    }
 		BUL_mechanized_agriculture = {
 
 			allowed = {
@@ -217,9 +218,44 @@ country = {
 			picture = generic_agrarian_society
 
 			modifier = {
-				MONTHLY_POPULATION = 0.7
+				monthly_population = 0.05
+        global_building_slots_factor = 0.05
 			}
-        }
+    }
+
+    BUL_peasant_welfare = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+        consumer_goods_factor = 0.05
+	      industrial_capacity_factory = 0.1
+        add_stability = 0.05
+      }
+    }
+
+    BUL_tax_reforms = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+       	line_change_production_efficiency_factor = 0.05
+		    min_export = -0.05
+      }
+    }
+
 		BUL_conscripted_peasantry = {
 
 			allowed = {
@@ -302,6 +338,23 @@ country = {
         drift_defence_factor = -0.25
       }
 		}
+
+    BUL_free_opposition = {
+
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = generic_democratic_drift_bonus
+
+      modifier = {
+        democratic_drift = 0.01
+        drift_defence_factor = -0.20
+      }
+    }
+
 
 		BUL_torpedo_navy = {
 

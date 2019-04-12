@@ -1161,7 +1161,12 @@ country_event = {
 
 			set_politics = { ruling_party = democratic elections_allowed = no }
 				add_popularity = {
-					ideology = fascism
-					popularity = -0.1
+					ideology = neutrality
+					popularity = -0.05
 				}
-	    }
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.03
+				}
+	   }
+	 }
