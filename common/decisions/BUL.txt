@@ -45,6 +45,7 @@ BUL_agrarian_land_reforms_category = {
       tag = BUL
       has_completed_focus = BUL_initiate_land_reforms
       has_country_flag = BUL_land_ownership_reformed
+			has_political_power  > 49
     }
 
     fire_only_once = yes
@@ -63,8 +64,10 @@ BUL_agrarian_land_reforms_category = {
 
     remove_effect = {
       add_ideas = BUL_tax_reforms
+		}
 
     complete_effect = {
+		  add_political_power = -50
     }
   }
 
@@ -99,41 +102,119 @@ BUL_agrarian_land_reforms_category = {
    complete_effect = {
    }
   }
+ }
 
-  BUL_modernize_agricultural_technology = {
+ BUL_conservative_foreign_investments_category = {
 
-		icon = GFX_decision_generic_decision
+ 	BUL_industrial_investments = {
 
-		available = {
-			tag = BUL
-			has_completed_focus = BUL_initiate_land_reforms
-      has_political_power > 49
-      num_of_factories > 24
-      NOT = {
-        has_idea = BUL_great_depression
-      }
-		}
+ 		icon = decision_generic_construction
 
-		fire_only_once = yes
+ 		available = {
+ 			tag = BUL
+ 			has_completed_focus = BUL_invite_investors
+      has_political_power > 74
+ 		}
 
-		ai_will_do = {
-			factor = 30
-		}
+ 		ai_will_do = {
+ 			factor = 30
+ 		}
 
-		days_remove = 50
+ 		days_remove = 90
 
-		visible = {
-      has_completed_focus = BUL_initiate_land_reforms
-      tag = BUL
-      has_country_flag = BUL_land_ownership_reformed
-	  }
+ 		visible = {
+ 	  }
 
-		remove_effect = {
-      add_ideas = BUL_mechanized_agriculture
+ 		remove_effect = {
     }
 
-		complete_effect = {
-      add_political_power = -50
+ 		complete_effect = {
+		add_political_power = -75
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
 		}
+ 	}
+}
+
+	BUL_infrastructure_investments = {
+
+ 		icon = decision_generic_construction
+
+ 		available = {
+ 			tag = BUL
+ 			has_completed_focus = BUL_invite_investors
+      has_political_power > 74
+ 		}
+
+ 		ai_will_do = {
+ 			factor = 30
+ 		}
+
+ 		days_remove = 90
+
+ 		visible = {
+ 	  }
+
+ 		remove_effect = {
+    }
+
+ 		complete_effect = {
+		  add_political_power = -75
+		  random_owned_controlled_state = {
+	    	add_building_construction = {
+				  type = infrastructure
+				  level = 1
+				  instant_build = yes
+		    }
+	    }
+			random_owned_controlled_state = {
+	    	add_building_construction = {
+				  type = infrastructure
+				  level = 1
+				  instant_build = yes
+		    }
+	    }
+ 	  }
 	}
+
+	BUL_civic_investments = {
+
+ 		icon = decision_generic_construction
+
+ 		available = {
+ 			tag = BUL
+ 			has_completed_focus = BUL_invite_investors
+      has_political_power > 74
+ 		}
+
+ 		ai_will_do = {
+ 			factor = 30
+ 		}
+
+ 		days_remove = 90
+
+ 		visible = {
+ 	  }
+
+ 		remove_effect = {
+    }
+
+ 		complete_effect = {
+		add_political_power = -75
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+	  }
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+    }
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+    }
+	 }
+ 	}
  }

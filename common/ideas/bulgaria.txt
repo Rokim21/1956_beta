@@ -105,6 +105,8 @@ country = {
 
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
+        production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
 			}
     }
 
@@ -116,15 +118,17 @@ country = {
 
 			removal_cost = -1
 
-			picture = GFX_goal_tfv_strengthen_commonwealth_ties
+			picture = SOV_revolutionized_industry
 
 			modifier = {
 
-				industrial_capacity_factory = -0.03
-				industrial_capacity_dockyard = -0.03
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+        production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
 			}
 		}
-		BUL_thriving_industry = { ##maybe too good?
+		BUL_efficient_military_industry = {
 
 			allowed = {
 				original_tag = BUL
@@ -132,12 +136,31 @@ country = {
 
 			removal_cost = -1
 
-			picture = GFX_goal_tfv_strengthen_commonwealth_ties
+			picture = SOV_revolutionized_industry
 
 			modifier = {
-			  consumer_goods_factor = -0.03
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+        production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+
+    BUL_thriving_military_industry = {
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			removal_cost = -1
+
+			picture = SOV_revolutionized_industry
+
+			modifier = {
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+        production_speed_arms_factory_factor = 0.01
+				production_speed_dockyard_factor = 0.01
 			}
 		}
 		BUL_shattered_militarism = {
@@ -269,7 +292,8 @@ country = {
 			modifier = {
 				conscription = 0.015
 			}
-        }
+    }
+
 		BUL_mobilized_proletariat = {
 
 			allowed = {
@@ -352,6 +376,21 @@ country = {
       modifier = {
         democratic_drift = 0.01
         drift_defence_factor = -0.20
+      }
+    }
+
+    BUL_orthodox_support = {
+
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = GFX_idea_tblra_church_support
+
+      modifier = {
+        consumer_goods_factor = -0.05
       }
     }
 

@@ -20,6 +20,6 @@ BUL_conservative_foreign_investments_category = {
 	  }
 
     visible = {
-       has_completed_focus = BUL_attract_investments
+       has_completed_focus = BUL_invite_investors
 	  }
 }

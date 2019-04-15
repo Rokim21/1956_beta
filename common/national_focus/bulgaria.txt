@@ -16,8 +16,7 @@ focus_tree = {
 	focus = {
 		id = BUL_diplomatic_mission_to_the_soviet_union
 		icon = GFX_focus_generic_soviet_politics
-
-		mutually_exclusive = { focus = BUL_restore_spirit_tarnovo_constitution focus = BUL_assert_monarchic_power}
+		mutually_exclusive = { focus = BUL_restore_spirit_tarnovo_constitution focus = BUL_continue_national_unity }
 		x = 5
 		y = 0
 		cost = 5
@@ -44,6 +43,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_revoke_censorship_communist_material
 		icon = GFX_goal_SOV_education_initiative
@@ -76,7 +76,7 @@ focus_tree = {
 		relative_position_id = BUL_revoke_censorship_communist_material
 		x = -3
 		y = 1
-		cost = 7.2
+		cost = 7.15
 
 		available = {
 		  has_government = communism
@@ -431,7 +431,7 @@ focus_tree = {
 		relative_position_id = BUL_rally_the_proletariat
 		x = 4
 		y = 1
-		cost = 7.2
+		cost = 7.15
 
 		available = {
       has_government = communism
@@ -594,7 +594,7 @@ focus_tree = {
 	focus = {
 		id = BUL_restore_spirit_tarnovo_constitution
 		icon = GFX_goal_consitution
-		mutually_exclusive = { focus = BUL_assert_monarchic_power focus = BUL_diplomatic_mission_to_the_soviet_union}
+		mutually_exclusive = { focus = BUL_continue_national_unity focus = BUL_diplomatic_mission_to_the_soviet_union}
 		relative_position_id = BUL_diplomatic_mission_to_the_soviet_union
 		x = 10
 		y = 0
@@ -644,7 +644,7 @@ focus_tree = {
 		relative_position_id = BUL_restore_spirit_tarnovo_constitution
 		x = -1
 		y = 1
-		cost = 7.2
+		cost = 7.15
 
 		available = {
 		  }
@@ -723,7 +723,8 @@ focus = {
 	}
 
 	completion_reward = {
-    swap_ideas = { remove_idea = BUL_support_multipartism add_idea = BUL_free_opposition }
+		remove_ideas = BUL_support_multipartism
+		add_timed_idea = { idea = BUL_free_opposition days = 180 }
 		add_popularity = {
 		  ideology = communism
 		  popularity = 0.05
@@ -759,7 +760,7 @@ focus = {
 	icon = GFX_focus_rom_abdicate
 	prerequisite = { focus = BUL_democracy_through_elections }
 	relative_position_id = BUL_democracy_through_elections
-	x = -1
+	x = -3
 	y = 1
 	cost = 6.4
 
@@ -810,7 +811,7 @@ focus = {
 	relative_position_id = BUL_initiate_land_reforms
 	x = 0
 	y = 1
-	cost = 7.2
+	cost = 7.15
 
 	ai_will_do = {
 		factor = 5
@@ -827,39 +828,39 @@ focus = {
 
 # conservative focuses
 focus = {
-	id = BUL_crush_the_communists
-	icon = GFX_focus_rom_abdicate
+	id = BUL_establish_free_trade
+	icon = GFX_goal_generic_trade
 	prerequisite = { focus = BUL_democracy_through_elections }
 	relative_position_id = BUL_democracy_through_elections
-	x = -1
+	x = 3
 	y = 1
-	cost = 6.4
+	cost = 7.15
 
 	ai_will_do = {
 		factor = 5
 	}
 	available = {
 		has_government = democratic
-		has_country_flag = BUL_agrarians_in_power
+		has_country_flag = BUL_democrats_in_power
+	}
+
+	bypass = {
+	  has_idea = free_trade
 	}
 
 	completion_reward = {
-    add_stability = 0.1
-		add_popularity = {
-			ideology = neutrality
-			popularity = -0.2
-		}
+    add_ideas = free_trade
   }
 }
 
 focus = {
 	id = BUL_invite_investors
 	icon = GFX_eye_focus_banking
-	prerequisite = { focus = BUL_crush_the_monarchists }
-	relative_position_id = BUL_crush_the_monarchists
+	prerequisite = { focus = BUL_establish_free_trade }
+	relative_position_id = BUL_establish_free_trade
 	x = 0
 	y = 1
-	cost = 3.6
+	cost = 7.15
 
 	ai_will_do = {
 		factor = 5
@@ -876,34 +877,254 @@ focus = {
 
 
 focus = {
-	id = BUL_form_the_orange_guard
-	icon = GFX_goal_small_infantry
-	prerequisite = { focus = BUL_initiate_land_reforms }
-	relative_position_id = BUL_initiate_land_reforms
+	id = BUL_fund_orthodox_church
+	icon = GFX_goal_orthodoxy
+	prerequisite = { focus = BUL_invite_investors }
+	relative_position_id = BUL_invite_investors
 	x = 0
 	y = 1
-	cost = 7.2
+	cost = 10
 
 	ai_will_do = {
 		factor = 5
 	}
 	available = {
 		has_government = democratic
-		has_country_flag = BUL_agrarians_in_power
+		has_country_flag = BUL_democrats_in_power
 	}
 
 	completion_reward = {
-    add_ideas = BUL_conscripted_peasantry
+    add_ideas = BUL_orthodox_support
+				random_owned_controlled_state = {
+						add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+						}
+				}
+		}
+}
+
+focus = {
+	id = BUL_denounce_fascist_nations
+	icon = GFX_focus_generic_anti_fascist_diplomacy
+	prerequisite = { focus = BUL_democracy_through_elections }
+	relative_position_id = BUL_democracy_through_elections
+	x = 0
+	y = 1
+	cost = 6.45
+
+	available = {
+	  has_government = democratic
+	}
+
+	completion_reward = {
+	  every_other_country = {
+		  limit = {
+			  has_government = fascism
+		  }
+		ROOT = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = medium_decrease
+			}
+		}
+		PREV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+		}
   }
 }
 
+focus = {
+	id = BUL_approach_the_west
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = BUL_denounce_fascist_nations }
+	relative_position_id = BUL_denounce_fascist_nations
+	x = -1
+	y = 1
+	cost = 5
+
+	available = {
+	  has_government = democratic
+	}
+
+	completion_reward = {
+	ENG = {
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = large_increase
+		}
+	}
+	ROOT = {
+		add_opinion_modifier = {
+			target = ENG
+			modifier = large_increase
+		}
+	}
+	FRA = {
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = large_increase
+		}
+	}
+	ROOT = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = large_increase
+		 }
+	 }
+ }
+}
+
 	focus = {
-		id = BUL_
-		mutually_exclusive = { focus = BUL_restore_spirit_tarnovo_constitution focus = BUL_diplomatic_mission_to_the_soviet_union}
-		icon = GFX_goal_centralize_power
-		x = 20
-		y = 0
+		id = BUL_alliance_with_britain
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = BUL_approach_the_west }
+		relative_position_id = BUL_approach_the_west
+		x = 0
+		y = 1
 		cost = 5
+
+		available = {
+			has_government = democratic
+			NOT = {
+			  is_in_faction = yes
+			}
+			ENG = {
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				has_capitulated = no
+				has_government = democratic
+			}
+		}
+		bypass = {
+		  is_in_faction_with = ENG
+		}
+		completion_reward = {
+			ENG = {
+    		country_event = generic.2
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_request_rearmament_permission
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = BUL_denounce_fascist_nations }
+		relative_position_id = BUL_denounce_fascist_nations
+		x = 1
+		y = 1
+		cost = 7.15
+
+		available = {
+			has_government = democratic
+			YUG = {
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				has_capitulated = no
+			}
+		}
+
+		bypass = {
+		  has_idea = BUL_fledgeling_military_industry
+		}
+
+		completion_reward = {
+			GRE = {
+    		country_event = axis_minors_bulgaria.30
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_negotiate_for_south_dobrudja
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = BUL_request_rearmament_permission }
+		relative_position_id = BUL_request_rearmament_permission
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+			has_government = democratic
+			has_country_flag = BUL_democrats_in_power
+			ROM = {
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				has_capitulated = no
+			}
+		}
+
+		bypass = {
+		  has_country_flag = BUL_agrarians_in_power
+		}
+
+		completion_reward = {
+			ROM = {
+    		country_event = axis_minors_bulgaria.33
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_non_aggression_pact_with_soviet
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = BUL_negotiate_for_south_dobrudja focus = BUL_alliance_with_britain }
+		relative_position_id = BUL_negotiate_for_south_dobrudja
+		x = -1
+		y = 1
+		cost = 10
+
+		available = {
+			has_government = democratic
+			SOV = {
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				has_capitulated = no
+			}
+		}
+
+		bypass = {
+      SOV = {
+			  exists = no
+			}
+		}
+
+		completion_reward = {
+			SOV = {
+    		country_event = axis_minors_bulgaria.36
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_continue_national_unity
+		mutually_exclusive = { focus = BUL_restore_spirit_tarnovo_constitution focus = BUL_diplomatic_mission_to_the_soviet_union}
+		icon = GFX_goal_BUL_flag_1
+		x = 25
+		y = 0
+		cost = 10
+
+		available = {
+      has_government = neutrality
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = BUL_struggle_for_the_right_wing
+		prerequisite = { focus = BUL_continue_national_unity }
+		relative_position_id = BUL_continue_national_unity
+		icon = GFX_goal_centralize_power
+		x = 0
+		y = 1
+		cost = 10
 
 		available = {
       has_government = neutrality

@@ -8,7 +8,7 @@ add_namespace = axis_minors_bulgaria
 country_event = {
 	id = axis_minors_bulgaria.1
 	title = axis_minors_bulgaria.1.t
-	desc = axis_minors_bulgaria.1.desc
+	desc = axis_minors_bulgaria.1.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
@@ -42,7 +42,7 @@ country_event = {
 country_event = { #failed shared licensing program, do not use.
 	id = axis_minors_bulgaria.2
 	title = axis_minors_bulgaria.2.t
-	desc = axis_minors_bulgaria.2.desc
+	desc = axis_minors_bulgaria.2.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	mean_time_to_happen = {
@@ -181,7 +181,7 @@ country_event = { #failed shared licensing program, do not use.
 country_event = {
 	id = axis_minors_bulgaria.4
 	title = axis_minors_bulgaria.4.t
-	desc = axis_minors_bulgaria.4.desc
+	desc = axis_minors_bulgaria.4.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -218,7 +218,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.5
 	title = axis_minors_bulgaria.5.t
-	desc = axis_minors_bulgaria.5.desc
+	desc = axis_minors_bulgaria.5.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -256,7 +256,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.6
 	title = axis_minors_bulgaria.6.t
-	desc = axis_minors_bulgaria.6.desc
+	desc = axis_minors_bulgaria.6.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -294,7 +294,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.7
 	title = axis_minors_bulgaria.7.t
-	desc = axis_minors_bulgaria.7.desc
+	desc = axis_minors_bulgaria.7.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -331,7 +331,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.8
 	title = axis_minors_bulgaria.8.t
-	desc = axis_minors_bulgaria.8.desc
+	desc = axis_minors_bulgaria.8.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -369,7 +369,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.9
 	title = axis_minors_bulgaria.9.t
-	desc = axis_minors_bulgaria.9.desc
+	desc = axis_minors_bulgaria.9.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -406,7 +406,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.10
 	title = axis_minors_bulgaria.10.t
-	desc = axis_minors_bulgaria.10.desc
+	desc = axis_minors_bulgaria.10.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -443,7 +443,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.11
 	title = axis_minors_bulgaria.11.t
-	desc = axis_minors_bulgaria.11.desc
+	desc = axis_minors_bulgaria.11.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -480,7 +480,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.12
 	title = axis_minors_bulgaria.12.t
-	desc = axis_minors_bulgaria.12.desc
+	desc = axis_minors_bulgaria.12.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -518,7 +518,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.13
 	title = axis_minors_bulgaria.13.t
-	desc = axis_minors_bulgaria.13.desc
+	desc = axis_minors_bulgaria.13.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -555,7 +555,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.14
 	title = axis_minors_bulgaria.14.t
-	desc = axis_minors_bulgaria.14.desc
+	desc = axis_minors_bulgaria.14.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -593,7 +593,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.15
 	title = axis_minors_bulgaria.15.t
-	desc = axis_minors_bulgaria.15.desc
+	desc = axis_minors_bulgaria.15.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -630,7 +630,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.16
 	title = axis_minors_bulgaria.16.t
-	desc = axis_minors_bulgaria.16.desc
+	desc = axis_minors_bulgaria.16.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -668,7 +668,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.17
 	title = axis_minors_bulgaria.17.t
-	desc = axis_minors_bulgaria.17.desc
+	desc = axis_minors_bulgaria.17.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -705,7 +705,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.18
 	title = axis_minors_bulgaria.18.t
-	desc = axis_minors_bulgaria.18.desc
+	desc = axis_minors_bulgaria.18.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -743,7 +743,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.19
 	title = axis_minors_bulgaria.19.t
-	desc = axis_minors_bulgaria.19.desc
+	desc = axis_minors_bulgaria.19.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -780,7 +780,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.20
 	title = axis_minors_bulgaria.20.t
-	desc = axis_minors_bulgaria.20.desc
+	desc = axis_minors_bulgaria.20.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -818,7 +818,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.21
 	title = axis_minors_bulgaria.21.t
-	desc = axis_minors_bulgaria.21.desc
+	desc = axis_minors_bulgaria.21.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -855,7 +855,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.22
 	title = axis_minors_bulgaria.22.t
-	desc = axis_minors_bulgaria.22.desc
+	desc = axis_minors_bulgaria.22.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -893,7 +893,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.23
 	title = axis_minors_bulgaria.23.t
-	desc = axis_minors_bulgaria.23.desc
+	desc = axis_minors_bulgaria.23.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -930,7 +930,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.24
 	title = axis_minors_bulgaria.24.t
-	desc = axis_minors_bulgaria.24.desc
+	desc = axis_minors_bulgaria.24.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -968,7 +968,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.25
 	title = axis_minors_bulgaria.25.t
-	desc = axis_minors_bulgaria.25.desc
+	desc = axis_minors_bulgaria.25.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -1005,7 +1005,7 @@ country_event = {
 country_event = {
 	id = axis_minors_bulgaria.26
 	title = axis_minors_bulgaria.26.t
-	desc = axis_minors_bulgaria.26.desc
+	desc = axis_minors_bulgaria.26.d
 	picture = GFX_report_event_generic_factory
 
 	mean_time_to_happen = {
@@ -1099,7 +1099,7 @@ country_event = {
 		create_country_leader = {
             name = "Nikola Mushanov"
             desc = "POLITICS_NIKOLA_MUSHANOV_DESC"
-            picture = "r56_portrait_BUL_Nikola_Mushanov.dds"
+            picture = "r56_portrait_BUL_Nikola_Mushanov.tga"
             expire = "1965.1.1"
             ideology = liberalism
             traits = {
@@ -1152,7 +1152,7 @@ country_event = {
 		id = axis_minors_bulgaria.28
 		title = axis_minors_bulgaria.28.t
 		desc = axis_minors_bulgaria.28.d
-		picture = GFX_report_event_generic_sign_treaty1
+		picture = GFX_report_event_bul_kyoseivanov
 
 		is_triggered_only = yes
 
@@ -1170,3 +1170,335 @@ country_event = {
 				}
 	   }
 	 }
+
+	 country_event = {
+ 		id = axis_minors_bulgaria.29
+ 		title = axis_minors_bulgaria.29.t
+ 		desc = axis_minors_bulgaria.29.d
+ 		picture = GFX_report_event_generic_communist_congress
+
+ 		fire_only_once = yes
+
+		mean_time_to_happen = {
+			days = 4
+		}
+
+		trigger = {
+		  has_completed_focus = BUL_revoke_censorship_communist_material
+		  has_idea = BUL_hristo_kabakchiev
+			communism > 0.35
+		}
+
+ 		option = {
+ 		    name = axis_minors_bulgaria.29.a
+
+				set_politics = { ruling_party = communism elections_allowed = no }
+ 				add_popularity = {
+ 					ideology = communism
+ 					popularity = 0.05
+ 				}
+ 	   }
+ 	 }
+
+	 country_event = {
+ 		id = axis_minors_bulgaria.30 #salonika agreement
+ 		title = axis_minors_bulgaria.30.t
+ 		desc = axis_minors_bulgaria.30.d
+ 		picture = GFX_report_event_generic_sign_treaty1
+
+ 		is_triggered_only = yes
+
+ 		option = {
+ 		    name = axis_minors_bulgaria.30.a
+
+				ai_chance = {
+					base = 60
+				}
+
+				swap_ideas = { remove_idea = BUL_fledgeling_military_industry add_idea = BUL_developing_military_industry }
+				BUL = {
+				  country_event = axis_minors_bulgaria.32
+				}
+				YUG = {
+				  country_event = axis_minors_bulgaria.31
+				}
+				ROM = {
+				  country_event = axis_minors_bulgaria.31
+				}
+				TUR = {
+				  country_event = axis_minors_bulgaria.31
+				}
+ 	   }
+		 option = {
+  		    name = axis_minors_bulgaria.30.b
+
+					ai_chance = {
+						base = 40
+					}
+
+					add_opinion_modifier = {
+						target = GRE
+						modifier = small_decrease
+					}
+  	   }
+ 	 }
+
+	 country_event = {
+ 		id = axis_minors_bulgaria.31
+ 		title = axis_minors_bulgaria.31.t
+ 		desc = axis_minors_bulgaria.31.d
+ 		picture = GFX_report_event_generic_sign_treaty1
+
+ 		is_triggered_only = yes
+
+ 		option = {
+ 		    name = axis_minors_bulgaria.31.a
+
+				ai_chance = {
+					base = 75
+				}
+        ROOT = {
+				  add_opinion_modifier = {
+					target = BUL
+					modifier = small_increase
+				  }
+				}
+			  BUL = {
+				  add_opinion_modifier = {
+					target = ROOT
+					modifier = small_increase
+				  }
+				}
+		 }
+		 option = {
+  		    name = axis_minors_bulgaria.31.b
+
+					ai_chance = {
+						base = 25
+					}
+        ROOT = {
+					add_opinion_modifier = {
+	 				target = BUL
+	 				modifier = small_decrease
+	 			  }
+				}
+	 			BUL = {
+	 				add_opinion_modifier = {
+	 				target = ROOT
+	 				modifier = small_decrease
+	 				}
+	 			}
+	 	 }
+ 	 }
+
+	 country_event = {
+			id = axis_minors_bulgaria.32
+			title = axis_minors_bulgaria.32.t
+			desc = axis_minors_bulgaria.32.d
+			picture = GFX_report_event_generic_sign_treaty1
+
+			is_triggered_only = yes
+
+			option = {
+				 name = axis_minors_bulgaria.32.a
+
+				 swap_ideas = { remove_idea = BUL_fledgeling_military_industry add_idea = BUL_developing_military_industry }
+			}
+	}
+
+
+country_event = {
+	id = axis_minors_bulgaria.33
+	title = axis_minors_bulgaria.33.t
+	desc = axis_minors_bulgaria.33.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name = axis_minors_bulgaria.33.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						is_puppet_of = BUL
+						is_in_faction_with = BUL
+					}
+				}
+				BUL = {
+					surrender_progress > 0.09
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_in_faction_with = ROOT
+					has_war_with = BUL
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					NOT = {
+						tag = BUL
+					}
+					ROM = {
+						is_puppet_of = PREV
+					}
+					NOT = {
+						is_in_faction_with = BUL
+					}
+				}
+			}
+		}
+		BUL = {
+			country_event = { days = 1 id = axis_minors_bulgaria.34 }
+		}
+	}
+	option = { # Refuse
+		name = axis_minors_bulgaria.33.b
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				NOT = {
+					BUL = {
+						surrender_progress > 0.09
+					}
+				}
+				NOT = {
+					any_other_country = {
+						is_in_faction_with = ROOT
+						has_war_with = BUL
+					}
+				}
+				NOT = {
+					any_other_country = {
+						NOT = {
+							tag = BUL
+						}
+						ROM = {
+							is_puppet_of = PREV
+						}
+						NOT = {
+							is_in_faction_with = BUL
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_faction_with = BUL
+					ROM = {
+						is_puppet_of = BUL
+					}
+				}
+			}
+		}
+		BUL = {
+			country_event = { days = 1 id = axis_minors_bulgaria.35 }
+		}
+	}
+}
+
+country_event = {
+	id = axis_minors_bulgaria.34
+	title = axis_minors_bulgaria.34.t
+	desc = axis_minors_bulgaria.34.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = axis_minors_bulgaria.34.a
+
+		BUL = { transfer_state = 77 }
+	}
+}
+
+country_event = {
+	id = axis_minors_bulgaria.35
+	title = axis_minors_bulgaria.35.t
+	desc = axis_minors_bulgaria.35.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = axis_minors_bulgaria.37.a
+
+	}
+}
+
+country_event = {
+	id = axis_minors_bulgaria.36
+	title = axis_minors_bulgaria.36.t
+	desc = axis_minors_bulgaria.36.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = axis_minors_bulgaria.36.a
+		ai_chance = {
+			factor = 80
+		}
+
+		effect_tooltip = {
+			diplomatic_relation = {
+			    country = BUL
+			    relation = non_aggression_pact
+			    active = yes
+			}
+		}
+		FROM = { country_event = { id = axis_minors_bulgaria.37 hours = 6 } }
+	}
+
+	# Reject
+	option = {
+		name = axis_minors_bulgaria.36.b
+		ai_chance = {
+			factor = 20
+		}
+		FROM = { country_event = { id = axis_minors_bulgaria.38 hours = 6 } }
+	}
+}
+
+country_event = {
+	id = axis_minors_bulgaria.37
+	title = axis_minors_bulgaria.37.t
+	desc = axis_minors_bulgaria.37.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Ok
+	option = {
+		name = axis_minors_bulgaria.37.a
+		diplomatic_relation = {
+		    country = SOV
+		    relation = non_aggression_pact
+		    active = yes
+		}
+	}
+}
+
+# Non-Interference Treaty with Germany notification event - Germany rejects
+country_event = {
+	id = axis_minors_bulgaria.38
+	title = axis_minors_bulgaria.38.t
+	desc = axis_minors_bulgaria.38.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Ok
+	option = {
+		name = axis_minors_bulgaria.38.a
+	}
+}
