@@ -937,6 +937,7 @@ focus = {
 		}
   }
 }
+}
 
 focus = {
 	id = BUL_approach_the_west
@@ -1136,10 +1137,277 @@ focus = {
 	}
 
 	focus = {
+		id = BUL_depression_recovery
+		icon = GFX_goal_generic_construction
+		x = 35
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_idea = BUL_great_depression
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { remove_idea = BUL_great_depression add_idea = BUL_great_depression2 }
+		}
+  }
+
+	focus = {
+		id = BUL_balance_the_production_standards
+		prerequisite = { focus = BUL_depression_recovery }
+		relative_position_id = BUL_depression_recovery
+		icon = GFX_goal_generic_production2
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_idea = BUL_great_depression2
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { remove_idea = BUL_great_depression2 add_idea = BUL_great_depression3 }
+			IF = {
+				limit = { has_idea = BUL_great_depression3 }
+	        remove_idea = BUL_great_depression3
+		  }
+		}
+	}
+
+	focus = {
+		id = BUL_economic_revitalization
+		prerequisite = { focus = BUL_depression_recovery }
+		relative_position_id = BUL_depression_recovery
+		icon = GFX_goal_generic_consumer_goods
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_idea = BUL_great_depression2
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = { remove_idea = BUL_great_depression2 add_idea = BUL_great_depression3 }
+			IF = {
+				limit = { has_idea = BUL_great_depression3 }
+	        remove_idea = BUL_great_depression3
+		  }
+		}
+	}
+
+	focus = {
+		id = BUL_industrial_modernization
+		prerequisite = { focus = BUL_balance_the_production_standards }
+		prerequisite = { focus = BUL_economic_revitalization }
+		relative_position_id = BUL_depression_recovery
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bul_modernization_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_post_depression_economic_recovery
+		icon = GFX_goal_stock_exchange
+		prerequisite = { focus = BUL_industrial_modernization }
+		relative_position_id = BUL_industrial_modernization
+		x = -3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		  NOT = {
+			  has_idea = BUL_great_depression3
+			}
+		}
+
+		completion_reward = {
+		random_owned_controlled_state = {
+		    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				  type = industrial_complex
+				  level = 2
+				  instant_build = yes
+			  }
+		  }
+		}
+  }
+
+	focus = {
+		id = BUL_post_depression_economic_recovery
+		icon = GFX_goal_stock_exchange
+		prerequisite = { focus = BUL_industrial_modernization }
+		relative_position_id = BUL_industrial_modernization
+		x = -3
+		y = 1
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		  NOT = {
+			  has_idea = BUL_great_depression3
+			}
+		}
+
+		completion_reward = {
+		random_owned_controlled_state = {
+		    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				  type = industrial_complex
+				  level = 2
+				  instant_build = yes
+			  }
+		  }
+		}
+  }
+
+	focus = {
+		id = BUL_two_year_railway_plan
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BUL_post_depression_economic_recovery }
+		relative_position_id = BUL_post_depression_economic_recovery
+		x = -1
+		y = 1
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+		add_timed_idea = { idea = BUL_railway_plan days = 730 }
+		48 = {
+				add_building_construction = {
+				  type = infrastructure
+				  level = 2
+				  instant_build = yes
+			  }
+		  }
+    }
+	}
+
+	focus = {
+		id = BUL_expand_chromium_production
+		icon = GFX_goal_generic_chromium
+		prerequisite = { focus = BUL_post_depression_economic_recovery }
+		relative_position_id = BUL_post_depression_economic_recovery
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+		  212 = {
+			  add_extra_state_shared_building_slots = 2
+			  add_building_construction = {
+				  type = industrial_complex
+				  level = 2
+				  instant_build = yes
+			  }
+			}
+		  add_resource = {
+			  type = chromium
+			  amount = 16
+			  state = 212
+		  }
+		}
+	}
+
+	focus = {
+		id = BUL_expand_the_chelopech_gold_deposit
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = BUL_expand_chromium_production }
+		relative_position_id = BUL_expand_chromium_production
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+		  add_timed_idea = { idea = BUL_chelopech_gold days = 240 }
+		  48 = {
+			  add_extra_state_shared_building_slots = 2
+			  add_building_construction = {
+				  type = industrial_complex
+				  level = 1
+				  instant_build = yes
+			  }
+			}
+		}
+	}
+
+	focus = {
 		id = BUL_expand_the_varna_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 40
-		y = 0
+		x = 50
+		y = 10
 
 		cost = 10
 
@@ -1656,8 +1924,8 @@ focus = {
 		id = BUL_short_range_fighter_focus
 		icon = GFX_goal_generic_air_fighter
 		mutually_exclusive = { focus = BUL_long_range_fighter_focus }
-		x = 48
-		y = 0
+		x = 60
+		y = 10
 		cost = 10
 
 		available_if_capitulated = yes

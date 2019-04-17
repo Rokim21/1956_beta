@@ -2772,11 +2772,6 @@ spriteType = {
 		name = "GFX_idea_BUL_dimitrov_ivanov"
 		texturefile = "gfx/interface/ideas/bul/r56_idea_BUL_dimitrov_ivanov.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_BUL_tsar_boris_iii"
-		texturefile = "gfx/interface/ideas/bul/r56_idea_BUL_tsar_boris_iii.dds"
-	}
-
 	spriteType = { #Auto-Generated
 		name = "GFX_idea_BUL_trifon_trifonov"
 		texturefile = "gfx/interface/ideas/bul/r56_idea_BUL_trifon_trifonov.dds"
