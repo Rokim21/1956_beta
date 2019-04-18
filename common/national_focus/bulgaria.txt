@@ -1060,7 +1060,10 @@ focus = {
 		}
 
 		bypass = {
-		  has_country_flag = BUL_agrarians_in_power
+		  OR = {
+			  has_full_control_of_state = 77
+		    has_country_flag = BUL_agrarians_in_power
+		  }
 		}
 
 		completion_reward = {
@@ -1393,7 +1396,7 @@ focus = {
 		completion_reward = {
 		  add_timed_idea = { idea = BUL_chelopech_gold days = 240 }
 		  48 = {
-			  add_extra_state_shared_building_slots = 2
+			  add_extra_state_shared_building_slots = 1
 			  add_building_construction = {
 				  type = industrial_complex
 				  level = 1
@@ -1402,6 +1405,317 @@ focus = {
 			}
 		}
 	}
+
+	focus = {
+		id = BUL_technological_advancement
+		icon = GFX_focus_research
+		prerequisite = { focus = BUL_expand_chromium_production }
+		prerequisite = { focus = BUL_two_year_railway_plan }
+		relative_position_id = BUL_expand_chromium_production
+		x = -1
+		y = 1
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+	  	num_of_factories > 25
+		}
+
+		completion_reward = {
+      add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BUL_build_coal_power_plants
+		icon = GFX_goal_power_plant
+		prerequisite = { focus = BUL_two_year_railway_plan }
+		relative_position_id = BUL_two_year_railway_plan
+		x = -1
+		y = 1
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+		  add_tech_bonus = {
+			  name = BUL_power_plant_bonus
+			  bonus = 1
+			  uses = 1
+			  category = industry
+				category = electronics
+		  }
+		random_owned_controlled_state = {
+		  add_extra_state_shared_building_slots = 2
+		  add_building_construction = {
+			  type = industrial_complex
+			  level = 2
+			  instant_build = yes
+		  }
+		}
+	}
+}
+
+	focus = {
+		id = BUL_mobilize_natural_resources
+		icon = GFX_goal_excavation
+		prerequisite = { focus = BUL_expand_the_chelopech_gold_deposit }
+		relative_position_id = BUL_build_coal_power_plants
+		x = 3
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		  OR = {
+			  has_war = yes
+        threat > 0.10
+			}
+		}
+
+		completion_reward = {
+      add_ideas = BUL_mobilized_resources
+			add_tech_bonus = {
+				name = BUL_excavation_bonus
+				bonus = 1
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_liquify_coal
+		icon = GFX_goal_refining
+		prerequisite = { focus = BUL_build_coal_power_plants }
+		relative_position_id = BUL_expand_the_chelopech_gold_deposit
+		x = -2
+		y = 1
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		completion_reward = {
+		  add_tech_bonus = {
+			  name = BUL_liquify_coal
+			  bonus = 1
+			  uses = 1
+			  category = synth_resources
+		  }
+		  random_owned_controlled_state = {
+		  add_extra_state_shared_building_slots = 1
+		  add_building_construction = {
+			  type = synthetic_refinery
+			  level = 1
+			  instant_build = yes
+		  }
+		}
+	}
+}
+
+	focus = {
+		id = BUL_housing_expansion_plan
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		prerequisite = { focus = BUL_liquify_coal }
+		prerequisite = { focus = BUL_mobilize_natural_resources }
+		relative_position_id = BUL_mobilize_natural_resources
+		x = 1
+		y = 1
+		cost = 14.3
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		  OR = {
+			  has_war = yes
+        threat > 0.10
+			}
+		}
+
+		completion_reward = {
+      48 = {
+			 add_extra_state_shared_building_slots = 3
+			}
+			211 = {
+			 add_extra_state_shared_building_slots = 3
+			}
+			212 = {
+			 add_extra_state_shared_building_slots = 3
+			}
+			IF = {
+				limit = { has_full_control_of_state = 77 }
+				212 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				48 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				211 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				77 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+			}
+			IF = {
+				limit = { has_full_control_of_state = 183 }
+				212 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				48 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				211 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				184 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+			}
+			IF = {
+				limit = {
+				  has_full_control_of_state = 77
+					has_full_control_of_state = 184
+				}
+				212 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				48 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				211 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				77 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+				184 = {
+				 add_extra_state_shared_building_slots = 3
+				}
+			}
+	  }
+	}
+
+	focus = {
+		id = BUL_kickstart_ammunition_production
+		icon = GFX_goal_ammunitions
+		prerequisite = { focus = BUL_industrial_modernization }
+		relative_position_id = BUL_industrial_modernization
+		x = 3
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		  NOT = {
+			  has_idea = BUL_great_depression3
+			}
+		}
+
+		  completion_reward = {
+		   add_tech_bonus = {
+			  name = BUL_ammunition_production_bonus
+			  bonus = 0.5
+			  uses = 1
+        category = support_weapons
+		  }
+		  random_owned_controlled_state = {
+		    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				  type = arms_factory
+				  level = 1
+				  instant_build = yes
+			  }
+		  }
+		}
+  }
+
+	focus = {
+		id = BUL_heavy_war_industry_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_kickstart_ammunition_production }
+		relative_position_id = BUL_kickstart_ammunition_production
+		x = -1
+		y = 1
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		  completion_reward = {
+		  random_owned_controlled_state = {
+		    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				  type = arms_factory
+				  level = 2
+				  instant_build = yes
+			  }
+		  }
+		}
+  }
+
+	focus = {
+		id = BUL_artillery_pieces_production
+		icon = GFX_goal_proving_grounds
+		prerequisite = { focus = BUL_kickstart_ammunition_production }
+		relative_position_id = BUL_kickstart_ammunition_production
+		x = 1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		  NOT = {
+			  has_idea = BUL_great_depression3
+			}
+		}
+
+		  completion_reward = {
+			 add_ideas = BUL_artillery_production
+		   add_tech_bonus = {
+			  name = BUL_artillery_production_bonus
+			  bonus = 1
+			  uses = 1
+        category = artillery
+		  }
+		  random_owned_controlled_state = {
+		    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				  type = arms_factory
+				  level = 1
+				  instant_build = yes
+			  }
+		  }
+		}
+  }
 
 	focus = {
 		id = BUL_expand_the_varna_shipyards

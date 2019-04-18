@@ -146,14 +146,33 @@ country = {
 
 			modifier = {
 
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
-        production_speed_arms_factory_factor = -0.1
-				production_speed_dockyard_factor = -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+        production_speed_arms_factory_factor = -0.15
+				production_speed_dockyard_factor = -0.15
 			}
     }
 
-		BUL_developing_military_industry = {
+    BUL_developing_military_industry = {
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			removal_cost = -1
+
+			picture = SOV_revolutionized_industry
+
+			modifier = {
+
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+        production_speed_arms_factory_factor = -0.10
+				production_speed_dockyard_factor = -0.10
+			}
+    }
+
+		BUL_kickstarted_military_industry= {
 
 			allowed = {
 				original_tag = BUL
@@ -467,6 +486,41 @@ country = {
 
       modifier = {
         production_speed_infrastructure_factor = 0.1
+      }
+    }
+
+    BUL_mobilized_resources = {
+
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = idea_generic_exploit_mines
+
+      modifier = {
+				min_export = -0.10
+        local_resources_factor = 0.10
+      }
+    }
+
+    BUL_artillery_production = {
+
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = idea_generic_artillery_regiments
+
+      modifier = {
+        production_factory_max_efficiency_factor = 0.05
+        artillery = {
+          build_cost_ic = -0.1
+          instant = yes
+        }
       }
     }
 

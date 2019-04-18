@@ -1502,3 +1502,41 @@ country_event = {
 		name = axis_minors_bulgaria.38.a
 	}
 }
+
+country_event = {
+	id = axis_minors_bulgaria.39
+	title = axis_minors_bulgaria.39.t
+	desc = axis_minors_bulgaria.39.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = yes
+
+	trigger = {
+	  num_of_military_factories = 5
+	}
+
+	option = {
+		name = axis_minors_bulgaria.39.a
+
+		swap_ideas = { remove_idea = BUL_fledgeling_military_industry add_idea = BUL_developing_military_industry }
+	}
+}
+
+country_event = {
+	id = axis_minors_bulgaria.40
+	title = axis_minors_bulgaria.39.t
+	desc = axis_minors_bulgaria.39.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = yes
+
+	trigger = {
+	  num_of_military_factories = 8
+	}
+
+	option = {
+		name = axis_minors_bulgaria.39.a
+
+		swap_ideas = { remove_idea = BUL_developing_military_industry add_idea = BUL_kickstarted_military_industry }
+	}
+}
