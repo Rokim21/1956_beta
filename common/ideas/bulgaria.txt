@@ -524,6 +524,21 @@ country = {
       }
     }
 
+    BUL_ministries_cooperation = {
+
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = generic_intel_bonus
+
+      modifier = {
+        production_speed_arms_factory_factor = 0.1
+      }
+    }
+
 		BUL_torpedo_navy = {
 
 			allowed = {

@@ -33,6 +33,7 @@ l_english:
  BUL_railway_plan:0 "Railway Expansion Plan"
  BUL_mobilized_resources:0 "Moblized Resources"
  BUL_artillery_production:0 "Artillery Pieces Expertise"
+ BUL_ministries_cooperation:0 "Ministries Cooperation"
 
  #tooltips
  vladimir_zaimov_killed:0 "Vladimir Zaimov Executed"
@@ -53,6 +54,7 @@ l_english:
  BUL_dimitar_ayryanov2:0 "Dimitar Ayranov"
  BUL_asen_toshev:0 "Asen Toshev"
  BUL_ivan_variklechkov:0 "Ivan Variklechkov"
+
  #communist air force
  BUL_gancho_manchev:0 "Gancho Manchev"
  BUL_trifon_trifonov:0 "Trifon Trifonov"
@@ -187,6 +189,9 @@ l_english:
  BUL_kickstart_ammunition_production:0 "Kickstart Ammunition Supplies Production"
  BUL_heavy_war_industry_expansion:0 "Heavy War Industry Expansion"
  BUL_artillery_pieces_production:0 "Artillery Pieces Expertise"
+ BUL_ministries_coop:0 "Combined Ministry Effort"
+ BUL_finalize_rearmament_plans:0 "Finalize Industrial Rearmament Plan"
+ BUL_industrial_centralization:0 "Industrial Centralization"
  BUL_expand_the_varna_shipyards:0 "Expand the Varna Shipyards"
  BUL_heavy_vessels:0 "Heavy Vessels"
  BUL_build_the_burgas_shipyards:0 "Build the Burgas Shipyards"

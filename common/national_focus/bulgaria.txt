@@ -1169,7 +1169,7 @@ focus = {
 		prerequisite = { focus = BUL_depression_recovery }
 		relative_position_id = BUL_depression_recovery
 		icon = GFX_goal_generic_production2
-		x = -2
+		x = -1
 		y = 1
 
 		cost = 5
@@ -1179,7 +1179,7 @@ focus = {
 		}
 
 		available = {
-			has_idea = BUL_great_depression2
+
 		}
 
 		cancel_if_invalid = yes
@@ -1200,7 +1200,7 @@ focus = {
 		prerequisite = { focus = BUL_depression_recovery }
 		relative_position_id = BUL_depression_recovery
 		icon = GFX_goal_generic_consumer_goods
-		x = 2
+		x = 1
 		y = 1
 
 		cost = 5
@@ -1210,7 +1210,7 @@ focus = {
 		}
 
 		available = {
-			has_idea = BUL_great_depression2
+
 		}
 
 		cancel_if_invalid = yes
@@ -1253,37 +1253,6 @@ focus = {
 			}
 		}
 	}
-
-	focus = {
-		id = BUL_post_depression_economic_recovery
-		icon = GFX_goal_stock_exchange
-		prerequisite = { focus = BUL_industrial_modernization }
-		relative_position_id = BUL_industrial_modernization
-		x = -3
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-		  NOT = {
-			  has_idea = BUL_great_depression3
-			}
-		}
-
-		completion_reward = {
-		random_owned_controlled_state = {
-		    add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				  type = industrial_complex
-				  level = 2
-				  instant_build = yes
-			  }
-		  }
-		}
-  }
 
 	focus = {
 		id = BUL_post_depression_economic_recovery
@@ -1693,9 +1662,6 @@ focus = {
 		}
 
 		available = {
-		  NOT = {
-			  has_idea = BUL_great_depression3
-			}
 		}
 
 		  completion_reward = {
@@ -1706,6 +1672,93 @@ focus = {
 			  uses = 1
         category = artillery
 		  }
+		  random_owned_controlled_state = {
+		    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				  type = arms_factory
+				  level = 1
+				  instant_build = yes
+			  }
+		  }
+		}
+  }
+
+	focus = {
+		id = BUL_ministries_coop
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = BUL_heavy_war_industry_expansion }
+		relative_position_id = BUL_heavy_war_industry_expansion
+		x = -1
+		y = 1
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		completion_reward = {
+	   	add_timed_idea = { idea = BUL_ministries_cooperation days = 240 }
+		}
+  }
+
+	focus = {
+		id = BUL_finalize_rearmament_plans
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = BUL_kickstart_ammunition_production }
+		prerequisite = { focus = BUL_artillery_pieces_production }
+		relative_position_id = BUL_kickstart_ammunition_production
+		x = -1
+		y = 1
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			has_idea = BUL_kickstarted_military_industry
+		}
+
+		  completion_reward = {
+			swap_ideas = { remove_idea = BUL_kickstarted_military_industry add_idea = BUL_efficient_military_industry }
+		  random_owned_controlled_state = {
+		    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				  type = arms_factory
+				  level = 1
+				  instant_build = yes
+			  }
+		  }
+		}
+  }
+
+	focus = {
+		id = BUL_industrial_centralization
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = BUL_artillery_pieces_production }
+		relative_position_id = BUL_artillery_pieces_production
+		x = 1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+		}
+
+		  completion_reward = {
+			add_tech_bonus = {
+				name = BUL_centralization_bonus
+				bonus = 1
+				uses = 1
+				category = concentrated_industry_category
+			}
 		  random_owned_controlled_state = {
 		    add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1792,7 +1845,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 				category = bb_tech
 				category = bc_tech
@@ -1877,7 +1930,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 				category = cl_tech
 
@@ -1918,7 +1971,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 				category = ca_tech
 
@@ -1959,7 +2012,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 				category = bb_tech
 
@@ -2023,7 +2076,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 				category = cl_tech
 				category = dd_tech
@@ -2066,7 +2119,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 				category = cl_tech
 
@@ -2107,7 +2160,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 
 				category = dd_tech
@@ -2150,7 +2203,7 @@ focus = {
 			navy_experience = 5
             add_tech_bonus = {
                 name = cr_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
 				category = ss_tech
 
@@ -2172,7 +2225,7 @@ focus = {
         completion_reward = {
             add_tech_bonus = {
                 name = fleet_in_being_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 2
                 category = naval_doctrine
 			}
@@ -2228,7 +2281,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_naval_bomber_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_bomber
 			}
@@ -2247,7 +2300,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = early_fighter
 				technology = fighter1
@@ -2298,7 +2351,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = early_bomber
 				technology = heavy_fighter1
@@ -2354,7 +2407,7 @@ focus = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = battlefield_support_tree
 			}
@@ -2380,7 +2433,7 @@ focus = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = operational_integrity_tree
 			}
@@ -2405,7 +2458,7 @@ focus = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = strategic_destruction_tree
 			}
@@ -2425,7 +2478,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cas_bomber
 			}
@@ -2445,7 +2498,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
@@ -2471,7 +2524,7 @@ focus = {
 			army_experience = 5
             add_tech_bonus = {
                 name = special_forces_bonus
-                bonus = 0.5
+                bonus = 1
                 uses = 1
                 technology = paratroopers
 				technology = paratroopers2
@@ -2502,7 +2555,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name =  air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -2559,7 +2612,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name =  air_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
