@@ -1190,7 +1190,7 @@ focus = {
 			swap_ideas = { remove_idea = BUL_great_depression2 add_idea = BUL_great_depression3 }
 			IF = {
 				limit = { has_idea = BUL_great_depression3 }
-	        remove_idea = BUL_great_depression3
+	        remove_ideas = BUL_great_depression3
 		  }
 		}
 	}
@@ -1221,7 +1221,7 @@ focus = {
 			swap_ideas = { remove_idea = BUL_great_depression2 add_idea = BUL_great_depression3 }
 			IF = {
 				limit = { has_idea = BUL_great_depression3 }
-	        remove_idea = BUL_great_depression3
+	        remove_ideas = BUL_great_depression3
 		  }
 		}
 	}
@@ -2034,6 +2034,7 @@ focus = {
 			}
 		}
 	}
+	
 	focus = {
 		id = BUL_heavy_vessels
 		icon = GFX_goal_sea_navy
@@ -2078,6 +2079,7 @@ focus = {
             }
 		}
 	}
+
 	focus = {
 		id = BUL_build_the_burgas_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -2120,6 +2122,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_modern_battlecruisers
 		icon = GFX_goal_battleship
@@ -2161,6 +2164,7 @@ focus = {
             }
 		}
 	}
+
 	focus = {
 		id = BUL_modern_heavy_cruisers
 		icon = GFX_goal_generic_navy_cruiser
@@ -2202,6 +2206,7 @@ focus = {
             }
 		}
 	}
+
 	focus = {
 		id = BUL_modern_battleships
 		icon = GFX_goal_generic_navy_battleship
@@ -2243,6 +2248,7 @@ focus = {
             }
 		}
 	}
+
     focus = {
         id = BUL_shipbuilding_experience
         icon = GFX_goal_generic_navy_doctrines_tactics
@@ -2265,6 +2271,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_light_vessels
 		icon = GFX_goal_coastal_navy
@@ -2309,6 +2316,7 @@ focus = {
             }
 		}
 	}
+
 	focus = {
 		id = BUL_modern_light_cruisers
 		icon = GFX_goal_generic_navy_cruiser
@@ -2350,6 +2358,7 @@ focus = {
             }
 		}
 	}
+
 	focus = {
 		id = BUL_modern_destroyers
 		icon = GFX_goal_generic_navy_anti_submarine
@@ -2393,6 +2402,7 @@ focus = {
             }
 		}
 	}
+
 	focus = {
 		id = BUL_modern_submarines
 		icon = GFX_goal_generic_navy_submarine
@@ -2434,6 +2444,7 @@ focus = {
             }
 		}
 	}
+
     focus = {
         id = BUL_naval_strategy
         icon = GFX_goal_generic_navy_doctrines_tactics
@@ -2455,6 +2466,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_torpedo_based_navy
 		icon = GFX_goal_torpedo
@@ -2491,6 +2503,7 @@ focus = {
 			add_ideas = BUL_torpedo_navy
 		}
 	}
+
 	focus = {
 		id = BUL_naval_bomber_focus
 		icon = GFX_goal_generic_air_naval_bomber
@@ -2511,6 +2524,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_short_range_fighter_focus
 		icon = GFX_goal_generic_air_fighter
@@ -2561,6 +2575,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_long_range_fighter_focus
 		icon = GFX_goal_generic_build_airforce
@@ -2612,6 +2627,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_low_altitude_flights
 		icon = GFX_goal_generic_air_fighter2
@@ -2663,6 +2679,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_offensive_bombing_strategy
 		icon = GFX_goal_generic_occupy_start_war
@@ -2688,6 +2705,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_CAS_effort
 		icon = GFX_goal_generic_CAS
@@ -2708,6 +2726,7 @@ focus = {
 			}
 		}
 	}
+
 	focus = {
 		id = BUL_bomber_focus
 		icon = GFX_goal_generic_air_bomber
@@ -2731,6 +2750,7 @@ focus = {
 			}
 		}
 	}
+
     focus = {
         id = BUL_experimental_paradoppings
         icon = GFX_focus_generic_paratrooper
@@ -2756,6 +2776,7 @@ focus = {
             }
         }
     }
+
 	focus = {
 		id = BUL_aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
