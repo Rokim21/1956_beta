@@ -539,6 +539,39 @@ country = {
       }
     }
 
+    BUL_post_rearmament_military_plans_idea = {
+
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = idea_generic_central_management
+
+      modifier = {
+      production_factory_max_efficiency_factor = 0.1
+      industrial_capacity_factory = 0.1
+      }
+    }
+
+    BUL_prosper_plan = {
+
+      allowed = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      picture = generic_goods_red_bonus
+
+      modifier = {
+        production_speed_buildings_factor = 0.1
+        local_resources_factor = 0.1
+        min_export = -0.10
+      }
+    }
+
 		BUL_torpedo_navy = {
 
 			allowed = {
