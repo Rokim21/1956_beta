@@ -833,6 +833,20 @@ central_american_unification_status = {
 		desc = "RULE_OPTION_HON_CENTRAL_AMERICA_UNIFIED_DESC"
 	}
 }
+jap_fragmentation_status = {
+	name = "JAP_FRAGMENTATION_STATUS"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = JAP_FRAGMENTED_KOR_PUPPET
+		text = "RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET"
+		desc = "RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_DESC"
+	}
+}
 
 ###---> Foreign Policy <><> <><> <><>
 

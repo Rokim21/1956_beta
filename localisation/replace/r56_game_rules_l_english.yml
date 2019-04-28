@@ -44,6 +44,7 @@
  RULE_OPTION_BEL_FRAGMENTED_GREATER_FLANDERS:0 "Greater Flanders"
  RULE_OPTION_BEL_FRAGMENTED_GREATER_FLANDERS_DESC:0 "Split Belgium between Flanders and Wallonia, Flanders take control of the Nord Pas-de-Calais region. Selecting Belgium will make you play as Flanders"
  
+
  CZE_FRAGMENTATION_STATUS:0 "@CZE Czechoslovakia Fragmentation Status"
  RULE_OPTION_CZE_FRAGMENTED:0 "Czechoslovakia Fragmented"
  RULE_OPTION_CZE_FRAGMENTED_DESC:0 "All releasable constituent nations comprising Czechoslovakia are released as free and independent nations upon game-start."
@@ -92,4 +93,8 @@
  RULE_OPTION_HON_CENTRAL_AMERICA_UNIFIED:0 "Honduras Reform Central America"
  RULE_OPTION_HON_CENTRAL_AMERICA_UNIFIED_DESC:0 "All the countries of Central America are annexed by Honduras, you get cores on those countries and your name changes to the United States of Central America."
  
+ JAP_FRAGMENTATION_STATUS:0 "@JAP Japan Fragmentation Status"
+ RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET:0 "Korea Puppeted"
+ RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_DESC:0 "Korea will be released as a Japanese puppet upon game-start."
+
  #####-----> End of File <><> <><> <><> <><> <><>
