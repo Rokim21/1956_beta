@@ -11,6 +11,109 @@ focus_tree = {
 	
 	default = yes
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 2 y = 20 }
+	continuous_focus_position { x = 2700 y = 700 }
+	
+	### Political Focuses ###	
+	focus = {
+		id = kor_strengthen_japan
+		text = kor_strengthen_japan
+		icon = GFX_focus_AST_war_japan
+		mutually_exclusive = { focus = kor_freedom }
+		cost = 10
+		x = 10
+		y = 0
 		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = kor_freedom
+		text = kor_freedom
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = kor_strengthen_japan }
+		cost = 10
+		x = 2
+		y = 0
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = kor_seek_communists
+		text = kor_seek_communists
+		icon = GFX_goal_support_communism
+		prerequisite = {focus = kor_freedom }
+		mutually_exclusive = { focus = kor_seek_allies }
+		mutually_exclusive = { focus = kor_internal_focus }
+		cost = 10
+		relative_position_id = kor_freedom		
+		x = -2
+ 		y = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.25
+			}
+				add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = kor_seek_allies
+		text = kor_seek_allies
+		icon = GFX_goal_support_democracy
+		prerequisite = {focus = kor_freedom }
+		mutually_exclusive = { focus = kor_seek_communists }
+		mutually_exclusive = { focus = kor_internal_focus }
+		cost = 10
+		relative_position_id = kor_freedom	
+		x = 0
+ 		y = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.25
+			}
+				add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = kor_internal_focus
+		text = kor_internal_focus
+		icon = GFX_focus_generic_home_defense
+		prerequisite = {focus = kor_freedom }
+		mutually_exclusive = { focus = kor_seek_allies }
+		mutually_exclusive = { focus = kor_seek_communists }
+		cost = 10
+		relative_position_id = kor_freedom		
+		x = 2
+ 		y = 1
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.25
+			}
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
 }

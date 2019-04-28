@@ -1,2 +1,22 @@
 ﻿l_english:
+
+#Focus
+ kor_strengthen_japan:0 "Strengthen Japan"
+ kor_strengthen_japan_desc:0 "Strengthen Japan Description."
+ kor_freedom:0 "Push for Freedom"
+ kor_freedom_desc:0 "The world is changing rapidly, with new ideologies turning up, we need to start focusing on politics and what is the best for our people."
+ kor_seek_communists:0 "Seek Soviet Support"
+ kor_seek_communists_desc:0 "Seek Soviet Support Description."
+ kor_seek_allies:0 "Seek British Support"
+ kor_seek_allies_desc:0 "Seek British Support Description."
+ kor_internal_focus:0 "Internal Focus"
+ kor_internal_focus_desc:0 "Internal Focus Description."
+ 
+#Diplomacy
+ 
+#Misc
  r56_KOR_decision_kim_il_sung_takes_command:0 "Kim Il Sung Takes Command of the Army"
+#Events
+ 
+#Ideas
+ 

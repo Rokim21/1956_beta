@@ -1077,6 +1077,9 @@ on_actions = {
 					release = KOR
 					puppet = KOR
 				}
+				KOR = {
+					set_country_flag = JAP_puppet
+				}
 			}
 		}
 	}
