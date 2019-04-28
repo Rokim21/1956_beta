@@ -30,6 +30,7 @@ ideas = {
 				OR = {
 					has_war_support > 0.5
 					has_war = yes
+					has_completed_focus = USA_limited_intervention
 				}
 			}
 			
@@ -62,7 +63,8 @@ ideas = {
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.75
-					has_war = yes					
+					has_war = yes
+					has_completed_focus = USA_limited_intervention					
 				}
 			}
 			
@@ -103,6 +105,7 @@ ideas = {
 				}
 				if = {
 					limit = {
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.3
@@ -113,6 +116,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -139,6 +143,16 @@ ideas = {
 					
 					is_major = yes
 				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+				modifier = {
+					tag = ENG
+					has_war = no
+					date < 1937.6.1
+					factor = 0
+				}
    			}
 		}
 		
@@ -153,11 +167,13 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					OR = {
+						has_completed_focus = HUN_secret_rearmament
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}
 				if = {
 					limit = {
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.5
@@ -181,6 +197,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -226,6 +243,7 @@ ideas = {
 				}
 				if = {
 					limit = {
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
@@ -248,6 +266,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -286,6 +305,7 @@ ideas = {
 				}
 				if = {
 					limit = {
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.9
@@ -296,6 +316,7 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
+						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes

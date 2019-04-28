@@ -10,6 +10,8 @@ focus_tree = {
 			tag = SOV
 		}
 	}
+
+	continuous_focus_position = { x = 1000 y = 900 }
 	
 	default = no
 
@@ -1442,7 +1444,7 @@ focus = {
 
 			add_tech_bonus = {
 				name = construction_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = construction_tech
 			}
@@ -1658,7 +1660,7 @@ focus = {
 		complete_tooltip = { 
 		add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -1683,7 +1685,7 @@ focus = {
 		completion_reward = {
 		add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -1898,17 +1900,17 @@ focus = {
 			}
 			add_resource = {
 					type = steel
-					amount = 12
+					amount = 10
 					state = 582
 					}
 			add_resource = {
 					type = steel
-					amount = 12
+					amount = 10
 					state = 652
 					}
 			add_resource = {
 					type = steel
-					amount = 12
+					amount = 10
 					state = 249
 					}
 			modify_timed_idea = {
@@ -1921,13 +1923,22 @@ focus = {
 			}
 		}
 		completion_reward = {
+			if = {
+				limit = {
+						has_completed_focus = SOV_Invest_in_Engineering
+				}
+				add_timed_idea = {
+					idea = SOV_engineering_push
+					days = 30
+				}	
+			}
 		if = {
 			limit = {
 				NOT = { has_tech = assembly_line_production }
 			}
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.50
+				bonus = 1
 				ahead_reduction = 1
 				uses = 1
 				technology = assembly_line_production
@@ -1939,7 +1950,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = construction_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = construction_tech
 				}
@@ -2124,7 +2135,7 @@ focus = {
 			custom_effect_tooltip = SOV_invest_in_enigneering_tooltip
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = electronics
 				}
@@ -2139,11 +2150,17 @@ focus = {
 		}
 
 		completion_reward = {
+			hidden_effect = {
+				add_timed_idea = {
+					idea = SOV_engineering_push
+					days = 30
+				}	
+			}
 			add_ideas = SOV_invest_in_engineering_focus
 			custom_effect_tooltip = SOV_invest_in_enigneering_tooltip
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = electronics
 				}
@@ -2280,7 +2297,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = hospital_bonus
-				bonus = 0.25
+				bonus = 0.5
 				uses = 1
 				category = hospital_tech
 			}
@@ -2414,13 +2431,13 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = rocket_bonus
-				ahead_reduction = 0.75
+				ahead_reduction = 2
 				uses = 1
 				category = rocketry 
 			}
 			add_tech_bonus = {
 				name = mot_rockets_bonus
-				ahead_reduction = 0.75
+				ahead_reduction = 2
 				uses = 1
 				category = mot_rockets
 			}
@@ -2473,7 +2490,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				bonus = 0.75
+				bonus = 3
 				uses = 1
 				category = nuclear
 			}
@@ -2783,7 +2800,7 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -2807,10 +2824,10 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 2
-				technology = basic_battleship
-				technology = heavy_battleship
+				category = bb_tech
+				category = bc_tech
 			}
 			modify_timed_idea = {
 					idea = SOV_revolutionized_industry_1
@@ -2841,7 +2858,7 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				technology = improved_light_tank
 			}
@@ -2863,7 +2880,6 @@ focus = {
 		prerequisite = { focus = SOV_transpolar_flights focus = SOV_bt7_development focus = SOV_ocean_going_navy}
 		x = 16
 		y = 1
-		relative_position_id = SOV_improve_railway
 		cost = 5
 		ai_will_do = {
 			factor = 8
@@ -2883,7 +2899,7 @@ focus = {
 					}
 				}
 				add_tech_bonus = {
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				technology = improved_equipment_conversion
 				technology = advanced_equipment_conversion
@@ -2897,7 +2913,7 @@ focus = {
 				}
 				add_tech_bonus = {
 				name = construction_bonus
-				bonus = 0.1
+				bonus = 0.5
 				uses = 1
 				category = construction_tech
 					}	
@@ -2942,7 +2958,7 @@ focus = {
 
 			add_tech_bonus = {
 				name = air_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = light_air
 				category = medium_air
@@ -3007,7 +3023,7 @@ focus = {
 			add_ideas = militarized_schools
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -3089,7 +3105,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = naval_equipment
 			}			
@@ -3133,7 +3149,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = ships_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = naval_equipment
 			}
@@ -3176,7 +3192,7 @@ focus = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = naval_doctrine
 			}
@@ -4794,7 +4810,7 @@ focus = {
 		x = 31
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -4813,35 +4829,29 @@ focus = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
+			add_named_threat = { threat = 10 name = SOV_world_revolution_t }
 			add_ideas = SOV_world_revolution_idea
-			every_country = {
-				IF = { 
-					limit = {
-						NOT = { 
-						has_government = communism 
-						}
-					}
-					add_timed_idea = { idea = comintern_influence days = 365 }
-				}
-			}
+			custom_effect_tooltip = SOV_world_revolution_tt
 		}
 
 		completion_reward = {
 			hidden_effect = {
 				news_event = { id = r56.soviet.29 days = 1 }
-			}
-			add_named_threat = { threat = 6 name =  SOV_world_revolution_t }
-			add_ideas = SOV_world_revolution_idea
-			every_country = {
-				IF = { 
-					limit = {
-						NOT = { 
-						has_government = communism 
+				every_country = {
+					IF = { 
+						limit = {
+							NOT = { 
+							has_government = communism 
+							}
 						}
-					}
 					add_timed_idea = { idea = comintern_influence days = 365 }
+					add_opinion_modifier = { target = SOV modifier = medium_decrease } 
+					}
 				}
 			}
+			add_named_threat = { threat = 10 name = SOV_world_revolution_t }
+			add_ideas = SOV_world_revolution_idea
+			custom_effect_tooltip = SOV_world_revolution_tt
 		}
 	}
 
@@ -5265,13 +5275,13 @@ focus = {
 			army_experience = 20
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = armor
 			}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1
 				category = land_doctrine
 			}
 			if = { limit = { has_idea = officers_purged } remove_ideas = officers_purged }
@@ -5842,7 +5852,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				category = industry
 			}

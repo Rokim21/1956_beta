@@ -241,7 +241,7 @@ shared_focus = GEN_Industrial_Boom
 
 		completion_reward = {
 			add_war_support = 0.10
-			add_ideas = collectivist_ethos_focus
+			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
 
 		}
 	}

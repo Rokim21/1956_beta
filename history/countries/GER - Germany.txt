@@ -2,6 +2,8 @@
 
 oob = "GER_1936"
 
+set_fuel_ratio = 0.8
+
 # Starting tech
 set_technology = {
 
@@ -340,7 +342,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
+	picture = "r56_portrait_GER_Adolf_Hitler.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -371,7 +373,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wilhelm III"
 	desc = "POLITICS_WILHELM_III_DESC"
-	picture = GFX_portrait_ger_wilhelm_iii
+	picture = "r56_portrait_GER_King_Wilhelm.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -675,7 +677,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Albert Kesselring"
 	picture = "Portrait_Germany_Albert_Kesselring.dds"
-	traits = { air_force_ties brilliant_strategist trait_cautious war_hero }
+	traits = { commando air_force_ties brilliant_strategist trait_cautious war_hero }
 	skill = 4
 	id = 32
 	attack_skill = 2
@@ -735,7 +737,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Erich Raeder"
-		picture = "Portrait_Germany_Erich_Raeder.dds"
+	picture = "Portrait_Germany_Erich_Raeder.dds"
 	traits = { naval_lineage battleship_adherent }
 	skill = 4
 	id = 27
@@ -747,7 +749,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Alfred Saalwächter"
-		picture = "Portrait_Germany_Alfred_Saalwachter.dds"
+	picture = "Portrait_Germany_Alfred_Saalwachter.dds"
 	traits = { old_guard_navy bold}
 	skill = 4
 	id = 28
@@ -759,7 +761,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Hermann Boehm"
-		picture = "Portrait_Germany_Hermann_Boehm.dds"
+	picture = "Portrait_Germany_Hermann_Boehm.dds"
 	traits = { craven superior_tactician }
 	skill = 4
 	id = 29
@@ -771,7 +773,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Wilhelm Marschall"
-		picture = "Portrait_Germany_Wilhelm_Marschall.dds"
+	picture = "Portrait_Germany_Wilhelm_Marschall.dds"
 	traits = { old_guard_navy bold}
 	skill = 4
 	id = 30
@@ -783,7 +785,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Günther Lütjens"
-		picture = "Portrait_Germany_Gunter_Lutjens.dds"
+	picture = "Portrait_Germany_Gunter_Lutjens.dds"
 	traits = { gentlemanly navy_career_officer superior_tactician }
 	skill = 3
 	id = 31

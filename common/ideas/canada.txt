@@ -623,13 +623,12 @@ ideas = {
 			picture = generic_degauss_ship_hulls
 
 			equipment_bonus = {
-				destroyer = {
+				ship_hull_light = {
+					instant = yes
 					sub_detection = 0.1
 				}
-				light_cruiser = {
-					sub_detection = 0.1
-				}
-				heavy_cruiser = {
+				ship_hull_cruiser = {
+					instant = yes
 					sub_detection = 0.1
 				}
 			}
@@ -651,7 +650,7 @@ ideas = {
 			
 			equipment_bonus = {
 				convoy = {
-					build_cost_ic = -0.30 instant = yes
+					build_cost_ic = -0.25 instant = yes
 				}
 			}
 		}
@@ -670,6 +669,10 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = CAN_swastika_clubs
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 
@@ -703,6 +706,10 @@ ideas = {
 						has_completed_focus = CAN_permanent_joint_defense_board
 					}
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			picture = generic_democratic_reformer_commonwealth_2d
@@ -731,6 +738,10 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = CAN_burn_the_royal_portraits
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 
@@ -891,7 +902,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.1
 			}
 			
 			traits = { military_theorist }
@@ -906,7 +917,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				nuclear = 0.07
+				nuclear = 0.15
 			}
 			
 			traits = { nuclear_scientist }
@@ -920,7 +931,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.1
 			}
 			
 			traits = { air_warfare_theorist }
@@ -1164,7 +1175,58 @@ ideas = {
 		
 		designer = yes
 		
-		vickers_armstrong_can = {
+		CAN_dominion_foundries = { #heaviest cast in canadian history, planned to make the Skink anti-aircraft sherman (Ram) conversion 
+
+			picture = generic_tank_manufacturer_3
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			# quite the useless tanks the vickers 6-ton
+		}		
+		CAN_montreal_locomotive_works = {
+
+			picture = generic_tank_manufacturer_2
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_the_valentine_tank
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "Together for Victory"
+						}
+					}
+					has_completed_focus = ABC_establish_a_armor_corp
+				}				
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { converted_train_manufacturer }
+			
+			# valentines
+		}
+		CAN_canadian_pacific_railway = {
 
 			picture = generic_tank_manufacturer_1
 
@@ -1173,8 +1235,42 @@ ideas = {
 				original_tag = CAN
 			}
 			
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_the_valentine_tank
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "Together for Victory"
+						}
+					}
+					has_completed_focus = ABC_establish_a_armor_corp
+				}				
+			}
+
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			# valentines
+		}				
+		vickers_armstrong_can = {
+
+			picture = vickers_armstrong_eng #generic_tank_manufacturer_1
+
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+			research_bonus = {
+				armor = 0.15
 			}
 			
 			traits = { medium_tank_manufacturer }
@@ -1184,31 +1280,61 @@ ideas = {
 	}
 
 	industrial_concern = {
+		CAN_northern_electric = {
 
-		
+			picture = generic_electronics_concern_1
+			
+			allowed = {
+				original_TAG = CAN
+			}
+			available = {
 
-		montreal_lab = {
+			}
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		CAN_stelco = {
 
 			picture = generic_industrial_concern_1
 			
 			allowed = {
-				OR = {
-					AND = {
-						original_TAG = CAN
-						has_dlc = "Together for Victory"
-					}
-					original_tag = QBC
-				}
-
+				original_TAG = CAN
 			}
-			
-
 			
 			research_bonus = {
-				electronics = 0.10
+				industry = 0.15
 			}
 			
-			traits = { electronics_concern }
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}		
+
+		montreal_lab = {
+
+			picture = generic_industrial_concern_2
+			
+			allowed = {
+				original_TAG = CAN
+			}
+			available = {
+				has_tech = nuclear_reactor
+				owns_state = 468
+			}
+			
+			research_bonus = {
+				
+			}
+			
+			traits = { nuclear_physics_concern }
 			
 			modifier = {
 			}
@@ -1224,8 +1350,8 @@ ideas = {
 			}
 			
 			research_bonus = {
-				synth_resources = 0.1
-				industry = 0.05
+				synth_resources = 0.155
+				industry = 0.10
 			}
 			
 			traits = { refinery_concern }
@@ -1236,6 +1362,99 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
+		CAN_sorel_industries = {
+			
+			picture = generic_artillery_manufacturer_1
+
+			allowed = {
+				OR = {
+					original_TAG = CAN
+					original_TAG = QBC
+				}
+				
+			}
+
+			available = {
+				owns_state = 468
+			}
+
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+		CAN_ford = {
+			
+			picture = ford_motor_company
+
+			allowed = {
+				original_TAG = CAN
+			}
+
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_cmp_truck
+					has_completed_focus = CAN_permanent_joint_defense_board
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "Together for Victory"
+						}
+					}
+					has_completed_focus = GEN_Invite_American
+					has_completed_focus = GEN_Automobile
+				}				
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }		
+			
+		}
+
+		CAN_chevrolet_canada = {
+			
+			picture = generic_tank_manufacturer_3
+
+			allowed = {
+				original_TAG = CAN
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_cmp_truck
+					has_completed_focus = CAN_shadow_factories
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "Together for Victory"
+						}
+					}
+					has_completed_focus = ABC_motorization_effort
+					has_completed_focus = GEN_Military_Buildup
+				}				
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }		
+			
+		}
 		
 		inglis_company = {
 			
@@ -1249,7 +1468,7 @@ ideas = {
 
 			
 			research_bonus = {
-				support_tech = 0.10
+				support_tech = 0.15
 			}
 			
 			traits = { support_equipment_manufacturer }
@@ -1269,18 +1488,90 @@ ideas = {
 
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			traits = { infantry_equipment_manufacturer }
 			
-					}
+		}
 		
 	}
 	
 	naval_manufacturer = { 
 		
 		designer = yes
+
+		CAN_marine_industries = {
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				OR = {
+					original_tag = CAN
+					original_tag = QBC
+				}	
+			}
+
+			available = {
+				owns_state = 468
+			}		
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { naval_manufacturer }
+		}
+
+		CAN_davie_shipbuilding = { #quebec only because Canada has enough small ship manufacturer
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				original_tag = QBC
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+
+		CAN_canadian_power_boat_company = { #installed in Montreal
+			picture = generic_naval_manufacturer_2
+
+			
+			allowed = {
+				OR = {
+					original_tag = QBC
+					original_tag = CAN
+				}
+				
+			}
+			
+			available = {
+				owns_state = 468
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
 		
 		kingston_shipbuilding = {
 			picture = generic_naval_manufacturer_2
@@ -1291,7 +1582,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			equipment_bonus = {
@@ -1310,7 +1601,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			equipment_bonus = {
@@ -1326,7 +1617,7 @@ ideas = {
 		designer = yes
 		
 		havilland_canada = {
-			picture = generic_air_manufacturer_1
+			picture = de_havilland
 
 			
 			allowed = {
@@ -1334,7 +1625,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -1355,7 +1646,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1382,7 +1673,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { naval_aircraft_manufacturer }
@@ -1409,7 +1700,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
@@ -1420,5 +1711,57 @@ ideas = {
 				factor = 1
 			}
 		}
+
+		pratt_and_whitney = {
+			picture = generic_air_manufacturer_1
+
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+						original_tag = CAN
+					}
+					has_completed_focus = CAN_we_have_the_hurricane
+					has_completed_focus = CAN_permanent_joint_defense_board
+				}
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								original_tag = CAN
+								NOT = {
+									has_dlc = "Together for Victory"
+								}
+							}
+							original_tag = QBC
+						}
+					}
+					has_completed_focus = GEN_Invite_American
+					has_completed_focus = GEN_Foreign_Design
+				}
+			}
+			
+			allowed = {
+				OR = {
+					original_tag = CAN
+					original_tag = QBC
+					original_tag = USA
+				
+				}				
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { fuel_efficient_aircraft_manufacturer }
+			
+			# motors
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 	}
 }
