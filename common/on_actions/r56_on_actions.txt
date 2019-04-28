@@ -1064,6 +1064,20 @@ on_actions = {
 			every_country = {
 				country_event = { id = r56.startup.event.01 }
 			}
+
+			# Game Rules - Fragmentation
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = jap_fragmentation_status
+						option = JAP_FRAGMENTED_KOR_PUPPET
+					}
+				}
+				JAP = {
+					release = KOR
+					puppet = KOR
+				}
+			}
 		}
 	}
 	
