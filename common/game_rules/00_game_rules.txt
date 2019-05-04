@@ -846,6 +846,11 @@ jap_fragmentation_status = {
 		text = "RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET"
 		desc = "RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_DESC"
 	}
+	option = {
+		name = JAP_FRAGMENTED_KOR_PUPPET_SWITCH
+		text = "RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_SWITCH"
+		desc = "RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_SWITCH_DESC"
+	}
 }
 
 ###---> Foreign Policy <><> <><> <><>

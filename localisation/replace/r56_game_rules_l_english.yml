@@ -96,5 +96,7 @@
  JAP_FRAGMENTATION_STATUS:0 "@JAP Japan Fragmentation Status"
  RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET:0 "Korea Puppeted"
  RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_DESC:0 "Korea will be released as a Japanese puppet upon game-start."
+ RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_SWITCH:0 "To play Korea select Japan"
+ RULE_OPTION_JAP_FRAGMENTED_KOR_PUPPET_SWITCH_DESC:0 "To play Korea select Japan, Korea will be puppeted by Japan."
 
  #####-----> End of File <><> <><> <><> <><> <><>
