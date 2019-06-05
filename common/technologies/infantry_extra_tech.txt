@@ -171,4 +171,32 @@ technologies = {
 			}
 		}
 	}
+
+	AI_advantage_tech = {
+
+		research_cost = 1
+
+		mobilization_speed = 0.02
+		production_speed_buildings_factor = 0.01
+		production_speed_bunker_factor = 0.04
+		industrial_capacity_factory = 0.01
+		supply_consumption_factor = -0.01
+		land_reinforce_rate = 0.01
+		research_speed_factor = 0.01
+		army_attack_factor = 0.01
+		attrition = -0.01
+		enemy_partisan_effect = -0.01
+		dig_in_speed = 0.01
+		out_of_supply_factor = -0.01
+		experience_gain_navy = 0.01
+		MONTHLY_POPULATION = 0.01
+
+
+		# only for AI Helps vs player and wars vs it's self #
+
+		allow = {
+			always = no
+		}
+	
+	}
 }

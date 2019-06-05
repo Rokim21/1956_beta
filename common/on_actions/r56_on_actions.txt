@@ -1006,6 +1006,15 @@ on_actions = {
 	on_startup = {
 	
 		effect = {
+			every_country = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					set_technology = { AI_advantage_tech = 1 }
+					load_oob = AI_start
+				}
+			}
 			#Anglo Persian oil concessions (limited for Khuzestan for now for balance reason)
 			PER = {
 				give_resource_rights = { receiver = ENG state = 413 }
@@ -1034,6 +1043,7 @@ on_actions = {
 			
 			POL = { country_event = poland.69 }
 			
+
 			#Ukraine
 			if = {
 				limit = {
