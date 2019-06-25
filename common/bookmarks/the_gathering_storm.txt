@@ -17,12 +17,11 @@ bookmarks = {
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				FRA_maginot_mentality
+				FRA_great_depression
 			}
 			focuses = {
-				FRA_status_quo
-				FRA_economic_reforms
-				FRA_radicalize_front
+
 			}
 		}
 

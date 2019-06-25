@@ -21,7 +21,7 @@ set_technology = {
 	camo = 1
 	gw_armored_car = 1
 	steel_production_1 = 1
-	
+
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -90,51 +90,12 @@ if = {
 
 1939.1.1 = {
 
-	add_political_power = 899
-
-	#adding ministers
-	add_ideas = {
-		charles_tillon
-		francois_darlan
-		philippe_fequant
-		famh
-		jean_marie_bergeret
-		renault_fra
-
-		#laws
-		partial_economic_mobilisation
-	}
-
-	complete_national_focus = FRA_tools_modernisation
-	complete_national_focus = FRA_legislative_election
-	complete_national_focus = FRA_support_daladier
-	complete_national_focus = FRA_status_quo
-	complete_national_focus = FRA_go_with_britain
-	complete_national_focus = FRA_rearmament
-	complete_national_focus = FRA_defense_national_funds
-	complete_national_focus = FRA_partial_mobilization
-	complete_national_focus = FRA_economic_reforms
-	complete_national_focus = FRA_devaluation
-	complete_national_focus = FRA_budget_deficit_law
-	complete_national_focus = FRA_giraud_plan
-
-	give_guarantee = POL
-	ENG = { add_to_faction = FRA }
-
-	oob = "FRA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "FRA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "FRA_1939_naval_legacy"
-		}
-	}
 	set_technology = {
 
 		# Extended Technologies
 		etax_doctrine = 1
 		camo = 1
-		
+
 		fighter1 = 1
 		fighter2 = 1
 		heavy_fighter1 = 1
@@ -150,7 +111,7 @@ if = {
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-		
+
 
 		#doctrines
 		#Air
@@ -158,8 +119,8 @@ if = {
 		fighter_baiting = 1
 		low_echelon_support = 1
 		dispersed_fighting = 1
-		
-			grand_battle_plan = 1
+
+		grand_battle_plan = 1
 
 		trench_warfare = 1
 		prepared_defense = 1
@@ -230,68 +191,14 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_victors_of_wwi
+  FRA_great_depression
 	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line
+	FRA_maginot_mentality
+	FRA_victors_of_wwi
 	limited_conscription
 }
 
 #give_guarantee = CZE
-
-#Order matters here Daladier will start as leaders because added last
-create_country_leader = {
-	name = "Charles de Gaulle"
-	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Paul Reynaud"
-	desc = "POLITICS_PAUL_REYNAUD_DESC"
-	picture = "Portrait_France_Paul_Reynaud.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-}
-
-create_country_leader = {
-	name = "Édouard Daladier"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "r56_portrait_FRA_Edouard_Daladier.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		stout_defender
-	}
-}
-
-create_country_leader = {
-	name = "Léon Blum"
-	desc = "POLITICS_LEON_BLUM_DESC"
-	picture = "r56_portrait_FRA_Leon_Blum.dds"
-	expire = "1965.1.1"
-        ideology = socialism
-}
-
-create_country_leader = {
-	name = "Albert Sarraut"
-	desc = "POLITICS_ALBERT_SARRAUT_DESC"
-	picture = "r56_portrait_FRA_Albert_Sarraut.dds"
-	expire = "1965.1.1"
-        ideology = socialism
-}
-
-create_country_leader = {
-	name = "Camille Chautemps"
-	desc = "POLITICS_CAMILLE_CHAUTEMPS_DESC"
-	picture = "r56_portrait_FRA_Camille_Chautemps.dds"
-	expire = "1936.1.24"
-	ideology = conservatism
-}
 
 create_country_leader = {
 	name = "Pierre Laval"
@@ -299,36 +206,31 @@ create_country_leader = {
 	picture = "r56_portrait_FRA_Pierre_Laval.dds"
 	expire = "1936.1.24"
 	ideology = conservatism
+	traits = {
+	  FRA_admires_italy
+	}
 }
 
-create_country_leader = { 
+create_country_leader = {
 	name = "Maurice Thorez"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
 	ideology = 	stalinism
-	traits = { r56_trait_anti_fascist }
-}
-
-create_country_leader = {
-	name = "Jacques Doriot"
-	desc = "POLITICS_JACQUES_DORIOT_DESC"
-	picture = "r56_portrait_FRA_Jacques_Doriot.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
 	traits = {
-		
+	  staunch_stalinist
+		r56_trait_anti_fascist
 	}
 }
 
-create_country_leader = { 
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
+create_country_leader = {
+	name = "Marcel Bucard"
+	desc = "POLITICS_MARCEL_BUCARD_DESC"
+	picture = "r56_portrait_FRA_marcel_bucard.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nazism
 	traits = {
-		
+    FRA_great_war_veteran
 	}
 }
 
@@ -337,9 +239,9 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_MAURRAS_DESC"
 	picture = "r56_portrait_FRA_Charles_Maurras.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = oligarchism
 	traits = {
-		
+   FRA_political_philosophist
 	}
 }
 #850 see britain and Raj for Marshall weavell
@@ -395,7 +297,7 @@ create_corps_commander = {
 	name = "Charles Huntziger"
 	picture = "portrait_france_Charles_Huntziger.dds"
 	traits = { old_guard infantry_officer }
-	
+
 	skill = 3
 	attack_skill = 3
 	defense_skill = 1
@@ -496,7 +398,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 3	
+	logistics_skill = 3
 	id = 812
 }
 
@@ -508,7 +410,7 @@ create_corps_commander = {
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 3
-	logistics_skill = 4	
+	logistics_skill = 4
 	id = 813
 }
 
@@ -516,7 +418,7 @@ create_corps_commander = {
 #	name = "Paul Legentilhomme"
 #	picture = "r56_portrait_FRA_Paul_Legentilhomme.dds"
 #	traits = {  }
-#	skill = 3	
+#	skill = 3
 #}
 
 create_corps_commander = {
@@ -527,7 +429,7 @@ create_corps_commander = {
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 4
-	logistics_skill = 2	
+	logistics_skill = 2
 	id = 814
 }
 
@@ -538,7 +440,7 @@ create_corps_commander = {
 #	skill = 3
 #}
 
-create_corps_commander = { #IRL retired in 1942				  
+create_corps_commander = { #IRL retired in 1942
 	name = "René Olry"
 	picture = "r56_portrait_FRA_Rene_Olry.dds"
 	traits = { trait_mountaineer }
@@ -546,7 +448,7 @@ create_corps_commander = { #IRL retired in 1942
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 1
-	logistics_skill = 2	
+	logistics_skill = 2
 	id = 815
 }
 
@@ -557,9 +459,9 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 3
-	logistics_skill = 1	
+	logistics_skill = 1
 	skill = 3
-	id = 816		 
+	id = 816
 }
 
 create_corps_commander = {
@@ -570,18 +472,18 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 1	
+	logistics_skill = 1
 	id = 817
 }
 
-#create_corps_commander = { #Add to FFL after liberation of north africa 
+#create_corps_commander = { #Add to FFL after liberation of north africa
 #	name = "Jean Touzet du Vigier"
 #	picture = "r56_portrait_FRA_Jean_Touzet_du_Vigier.dds"
 #	traits = { }
 #	skill = 2
 #}
 
-### END MOD ### 
+### END MOD ###
 ### Ship Variants ###
 # 1936 Start #
 if = {
@@ -709,7 +611,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Minerve Class"					
+		name = "Minerve Class"
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -755,7 +657,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Le Fantasque Class"				
+		name = "Le Fantasque Class"
 		type = ship_hull_light_1
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -771,7 +673,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Mogador Class"				
+		name = "Mogador Class"
 		type = ship_hull_light_2
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -822,7 +724,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "La Galissonnière Class"			
+		name = "La Galissonnière Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
@@ -858,7 +760,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Algérie Class"				
+		name = "Algérie Class"
 		type = ship_hull_cruiser_1
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
@@ -876,7 +778,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Courbet Class"		
+		name = "Courbet Class"
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -896,7 +798,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Bretagne Class"				
+		name = "Bretagne Class"
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -916,7 +818,7 @@ if = {
 	}
 	# Battlecruisers #
 	create_equipment_variant = {
-		name = "Dunkerque Class"		
+		name = "Dunkerque Class"
 		type = ship_hull_heavy_2
 		name_group = FRA_BC_HISTORICAL
 		parent_version = 0
@@ -994,7 +896,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
 		create_equipment_variant = {
-			name = "Aurore Class"				
+			name = "Aurore Class"
 			type = ship_hull_submarine_2
 			name_group = FRA_SS_HISTORICAL
 			parent_version = 0

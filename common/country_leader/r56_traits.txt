@@ -995,6 +995,43 @@ leader_traits = {
 		}
 	}
 
+###------> FRA <><> <><> <><> <><> <><>
+
+FRA_admires_italy = {
+	sprite = 13
+	random = no
+	fascism_drift = 0.01
+	fascism_acceptance = 25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+FRA_political_philosophist = {
+	sprite = 13
+	random = no
+  neutrality_drift = 0.03
+	political_advisor_cost_factor = -0.05
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+FRA_great_war_veteran = {
+	sprite = 13
+	random = no
+	max_dig_in = 5
+	dig_in_speed_factor = 0.1
+	experience_gain_army = -0.05
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 ###------> GER <><> <><> <><> <><> <><>
 
 	stubborn = {
