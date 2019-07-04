@@ -1,0 +1,27 @@
+division_template = {
+	name = "Stasi Felix Dzerzhinsky Guards Regiment"
+
+	division_names_group = AFG_ARM_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+units = {
+division = {
+		name = "Felix Dzerzhinsky Guards Regiment 1"
+		location = 6521
+		division_template = "Stasi Felix Dzerzhinsky Guards Regiment"
+		start_experience_factor = 0.3
+	}
+division = {
+		name = "Felix Dzerzhinsky Guards Regiment 2"
+		location = 6521
+		division_template = "Stasi Felix Dzerzhinsky Guards Regimenti"
+		start_experience_factor = 0.3
+	}
+}

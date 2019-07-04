@@ -470,8 +470,8 @@ WGR = {
     color_ui = rgb { 225 255 255 }
 }
 DDR = {
-    color = rgb { 120 150 80 }
-    color_ui = rgb { 150 180 120 }
+    color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
 }
 KOR = {
 	color = rgb { 255  240  195 }

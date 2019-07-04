@@ -1,0 +1,108 @@
+﻿l_english:
+################################### COUTRY STUFF            \n   §H§!
+
+ DDR_neutrality_party:0 "SMAD"
+ DDR_neutrality_party_long:0 "Sowjetische Militärverwaltung in Deutschland"
+ DDR_fascism_party:0 "NSDAP"
+ DDR_fascism_party_long:0 "Die nationalsozialistische deutsche Arbeiterpartei"
+ DDR_democratic_party:0 "SPD"
+ DDR_democratic_party_long:0 "Sozialdemokratische Partei in der DDR"
+ DDR_communism_party:0 "KPD"
+ DDR_communism_party_long:0 "Kommunistische Partei Deutschlands"
+ DDR_communism_party_sed_long:0 "Sozialistische Einheitspartei Deutschlands"
+ DDR_communism_party_sed:0 "SED"
+ DDR_democratic_party_ldpd_long:0 "Liberal Demokratische Partei Deutschlands"
+ DDR_democratic_party_ldpd:0 "LDPD"
+ DDR_communism_party_ndpd:0 "NDPD"
+ DDR_communism_party_ndpd_long:0 "National-Demokratische Partei Deutschlands"
+ 
+################################### Focuses                 \n   §H§!
+ 
+ DDR_Ostzone:0 "Ostzone"
+ DDR_Ostzone_desc:0 "The Soviet Occupation Zone or Ostzone, is the area of Germany presently occupied by the Soviets as dictated by the Potsdam Agreement. The repression and fear present in the years of Nazi Germany will continue on under a new banner. "
+ 
+ DDR_Stunde_Null:0 "Stunde Null"
+ DDR_Stunde_Null_desc:0 "Stunde Null"
+ 
+ DDR_Formation_of_the_SED:0 "Formation of the SED"
+ DDR_Formation_of_the_SED_desc:0 "Formation of the SED"
+ 
+ DDR_establish_a_new_socialist_consitution:0 "Establish a New Socialist Constitution"
+ DDR_establish_a_new_socialist_consitution:0 "Establish a New Socialist Constitution"
+ 
+ DDR_Proclaim_the_Deutsche_Demokratische_Republik:0 "Proclaim the Deutsche Demokratische Republik"
+ DDR_Proclaim_the_Deutsche_Demokratische_Republik_desc:0 "Proclaim the Deutsche Demokratische Republik"
+ 
+ DDR_Volkskammer:0 "The Volkskammer"
+ 
+ DDR_Das_Aufraumen:0 "Das Aufräumen"
+ 
+ DDR_The_NDPD:0 "The NDPD"
+ 
+ DDR_formation_of_the_Ministerium_fur_Staatssicherheit:0 "£army_experience Form the Ministerium Für Staatssicherheit"
+ 
+ DDR_loyalty_to_moscow:0 "Reafirm Loyalty to Moscow"
+ 
+ DDR_Split_governmental_titles:0 "Split governmental titles"
+ 
+ DDR_1_person_2_titles:0 "1 Person 2 Titles"
+ 
+ DDR_Chairman_Grotewohl:0 "Chairman Grotewohl"
+ 
+ ################################### Flags                \n   §H§!
+ 
+ DDR_constitution_sed:0 "The Constitution of the Hardline SED"
+ DDR_constitution_liberal:0 "The Constitution of the Liberal SED"
+ DDR_denazi_flag:0 "§GSuccessful Denazification§!"
+ DDR_Communist_hard_SED:0 "§YHas Formed a Government of Hardline Party Members§!"
+ DDR_wehrmacht_generals:0 "§YHas Allowed the Rehabilitation of Former Wehrmacht Generals§!"
+ DDR_Pieck_removed1:0 "§RWilhelm Pieck has fallen ill§!"
+ 
+################################### Ideas                   \n   §H§!
+ 
+ DDR_Denazification:0 "Denazification"
+ DDR_Denazification_succesful:0 "Successful Denazification"
+ DDR_War_torn_country:0 "War Torn Country"
+ DDR_War_torn_country_2:0 "War Torn Country"
+ DDR_a_divided_nation:0"A Divided Nation"
+ DDR_Pieck:0 "Wilhelm Pieck"
+ Ulbricht:0 "Walter Ulbricht"
+ DDR_stasi:0 "The Stasi"
+ 
+ 
+################################### Events                  \n   §H§!
+
+ DDR_event.1.t:0 "The Constitution of the German Democratic Republic!"
+ DDR_event.1.d:0 "The Constitution of the German Democratic Republic!"
+ DDR_event.1.a:0 "The Hardline SED Wing!"
+ DDR_event.1.b:0 "The Reformist SED Wing!"
+ 
+################################### Traits            \n   §H§!
+ 
+ loyal_partyman:0 "Loyal Partyman"
+ Chairman_of_the_Socialist_Unity_Party:0 "Chairman of the Socialist Unity Party"
+ Marshal_of_the_ussr:0 "Marshal of the Soviet Union"
+ Soviet_military_administrator:0 "Soviet Military Administrator"
+ 
+################################### Other Stuff             \n   §H§!
+ 
+ DDR_Ostzone_tt:0 "§RWe will start the process of preparing the Occupation Zone for self governance under Soviet supervision. \n§!"
+ DDR_Stunde_Null_dec_tt:0 "Unlocks Decision: §RStunde Null \n§!"
+ DDR_denazi:0 "Replace §YDenazification§! with §YSuccessful Denazification§! \n Effective change: \n Political Power Gain: §G+15%§! \n Weekly Stability: §G+2.00%§! \n Daily Fascism Support: §G-0.05§!"
+ DDR_stasi_tt:0 "Forms the §YFelix Dzerzhinsky Guards Regiment 1§! and §YFelix Dzerzhinsky Guards Regiment 2§! in §YBerlin§!\n"
+ DDR_grotewohl_tt:0 "§YOtto Grotewohl Becomes the Chairman of the SED§!"
+ 
+ DDR_Stunde_Null_dec:0 "Stunde Null"
+ DDR_Stunde_Null_dec_desc:0 "Stunde Null"
+ DDR_Fascist_Raid:0 "Crackdown on National Socialists"
+ DR_Fascist_Raid_desc:0 "Anti-Fascist Raid"
+ DDR_Set_up_silence_camps:0 "Set up Silence Camps"
+ DDR_Volksammer_dec:0 "The Volksammer"
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,83 @@
+DDR_Stunde_Null_dec = {
+
+DDR_Fascist_Raid = {
+
+		icon = antifascism
+
+		available = {
+			has_completed_focus = DDR_Stunde_Null
+			fascism > 0.15
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no	
+		visible = {
+			OR = {
+				original_tag = DDR
+			}
+			NOT = { has_global_flag = ddr_formed }			
+ }
+		
+
+		complete_effect = {				
+		add_popularity = {
+        ideology = fascism
+        popularity = -0.05
+                         }
+        add_stability = 0.01						 
+		}			
+		ai_will_do = {
+			factor = 100
+    }
+}
+
+DDR_Set_up_silence_camps = {
+
+		icon = oppression
+
+		available = {
+			has_completed_focus = DDR_Stunde_Null
+		    fascism < 0.15
+		}
+		
+		cost = 100
+		days_remove = 40
+		fire_only_once = no	
+		visible = {
+			OR = {
+				original_tag = DDR
+			}
+			NOT = { has_global_flag = ddr_formed }			
+ }
+		
+
+		complete_effect = {				
+		add_popularity = {
+        ideology = fascism
+        popularity = -0.1
+                         }
+		custom_effect_tooltip = DDR_denazi
+		Hidden_effect = {
+        remove_idea = DDR_Denazification
+        add_idea = DDR_Denazification_succesful
+		set_country_flag = DDR_denazi_flag
+           	}					 
+		}			
+		ai_will_do = {
+			factor = 100
+    }
+}
+
+
+}
+	
+
+
+
+
+
+
+
+
+}

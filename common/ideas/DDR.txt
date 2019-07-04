@@ -1,0 +1,141 @@
+ideas = {
+    country = {
+    DDR_Denazification = {
+			picture = generic_purge
+			allowed = {		
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+				 fascism_drift = -0.05
+				 stability_weekly = -0.01
+                 political_power_factor = -0.1			 
+			}
+		}
+
+DDR_Denazification_succesful = {
+			picture = generic_purge
+			allowed = {
+			    always = no	
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+				 fascism_drift = -0.1
+				 stability_weekly = 0.01
+                 political_power_factor = 0.05				 
+			}
+		}
+		
+DDR_a_divided_nation = {
+			picture = ddr_split
+			allowed = {
+			    always = no	
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+				 				 
+			}
+		}
+		
+	DDR_Pieck = {
+			picture = Pieck
+			allowed = {
+			    always = no	
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+			stability_factor = 0.10		 				 
+			}
+		}
+
+DDR_War_torn_country = {
+			picture = ddr_war_torn
+			allowed = {
+			    always = no	
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+		    production_speed_buildings_factor = -0.1
+			MONTHLY_POPULATION = -0.2
+            conscription = -0.01
+			industrial_capacity_factory = -0.1
+			production_speed_arms_factory_factor = -0.1
+			}
+		}
+
+DDR_War_torn_country_2 = {
+			picture = ddr_war_torn
+			allowed = {
+			    always = no	
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+		    production_speed_buildings_factor = 0.05
+			MONTHLY_POPULATION = -0.3
+            conscription = -0.015
+			industrial_capacity_factory = -0.1
+			production_speed_arms_factory_factor = -0.1
+			}
+		}	
+
+DDR_stasi = {
+			picture = ddr_Stasi
+			allowed = {
+			    always = no	
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+		    decryption_factor = 0.2
+            political_power_factor = 0.1
+			political_advisor_cost_factor = 0.15	
+			}
+		}		
+   }
+   
+  
+  
+   political_advisor = {
+   
+   Ulbricht = {
+            picture = DDR_Ulbricht
+			allowed = {
+				original_tag = DDR
+			}
+			available = {
+				has_completed_focus = DDR_1_person_2_titles
+			}
+			traits = { loyal_partyman }
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+  
+   }  
+}

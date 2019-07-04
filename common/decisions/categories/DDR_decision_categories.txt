@@ -1,0 +1,18 @@
+
+
+DDR_Stunde_Null_dec = {
+
+	icon = sov_great_patriotic_war
+	
+	allowed = {
+		original_tag = DDR
+		NOT = {
+		has_government = fascism
+        }
+	}
+
+	visible = {
+		has_completed_focus = DDR_Stunde_Null
+	}
+}
+

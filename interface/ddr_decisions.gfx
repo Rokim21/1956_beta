@@ -1,0 +1,11 @@
+spriteTypes = {
+
+spriteType = {
+		name = "GFX_decision_antifascism"
+		texturefile = "gfx/interface/decisions/decision_antifascism.dds"
+	}
+
+
+
+
+}

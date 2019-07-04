@@ -51,98 +51,46 @@ set_technology = {
 	transport = 1
 }
 
-1939.1.1 = {
-
-	add_political_power = 1197
-	
-	set_technology = {
-
-		# Extended Technologies
-		etax_doctrine = 1
-		camo = 1
-		
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1
-		basic_battleship = 1
-		improved_battleship = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
+add_ideas = {
+	DDR_War_torn_country
+	DDR_a_divided_nation
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
-	fascism = 10
-	communism = 60
+	democratic = 5
+	fascism = 30
+	communism = 15
+	neutrality = 50
 }
 
 add_ideas = {
 }
 
 create_country_leader = {
-	name = "Jake Richter"
+	name = "Hans Gruber"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = {		
+	}
+}
+
+create_country_leader = {
+    name = "Vasily Danilovich Sokolovsky"
+	desc = ""
+	picture = "gfx/leaders/SOV/r56_Portrait_SOV_Vasily_Danilovich_Sokolovsky.tga"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
-		political_dancer		
+	Marshal_of_the_ussr
+	Soviet_military_administrator
 	}
 }
 

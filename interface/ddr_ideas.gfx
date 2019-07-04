@@ -1,0 +1,29 @@
+spriteTypes = {
+
+spriteType = {
+		name = "GFX_idea_ddr_war_torn"
+		texturefile = "gfx/interface/ideas/Idea_ddr_war_torn.dds"
+	}
+	
+spriteType = {
+		name = "GFX_idea_ddr_split"
+		texturefile = "gfx/interface/ideas/Idea_ddr_split.dds"
+	}
+	
+spriteType = {
+		name = "GFX_idea_Pieck"
+		texturefile = "gfx/interface/ideas/Idea_Pieck.dds"
+	}
+	
+spriteType = {
+		name = "GFX_idea_DDR_Ulbricht"
+		texturefile = "gfx/interface/ideas/Idea_DDR_Ulbricht.dds"
+	}
+	
+spriteType = {
+		name = "GFX_idea_ddr_Stasi"
+		texturefile = "gfx/interface/ideas/Idea_ddr_Stasi.dds"
+	}
+
+}
+

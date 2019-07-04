@@ -1,0 +1,1092 @@
+focus_tree = {
+	id = ddr_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DDR
+		}
+	}
+	
+	default = no
+
+	
+	##occupation zone branch##
+
+focus = {
+		id = DDR_Ostzone
+		icon = GFX_sca_focus_communist_loyalty
+		x = 3
+		y = 0
+
+		cost = 2.9
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        is_puppet_of = SOV
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+        custom_effect_tooltip = DDR_Ostzone_tt
+		add_political_power = 50
+		add_stability = 0.05
+		}
+	}
+	
+focus = {
+		id = DDR_Stunde_Null
+		icon = GFX_Goal_Stunde_Null
+		prerequisite = { 
+			focus = DDR_Ostzone
+		}
+		x = -1
+		y = 1
+		relative_position_id = DDR_Ostzone
+
+		cost = 5.8
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = DDR_Stunde_Null_dec_tt
+		add_ideas = DDR_Denazification
+		}
+	}
+	
+focus = {
+		id = DDR_Das_Aufraumen
+		icon = GFX_Goal_ddr_shovels
+		prerequisite = { 
+			focus = DDR_Stunde_Null
+		}
+		x = -2
+		y = 2
+		relative_position_id = DDR_Ostzone
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ideas = {
+        remove_idea = DDR_War_torn_country
+        add_idea = DDR_War_torn_country_2
+            }
+		}
+	}
+	
+	focus = {
+		id = DDR_Formation_of_the_SED
+		icon = GFX_Goal_SED
+		prerequisite = { 
+			focus = DDR_Ostzone
+		} 
+		x = 1
+		y = 1
+		relative_position_id = DDR_Ostzone
+
+		cost = 2.2
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_stability = 0.1
+        add_political_power = 100
+		add_popularity = {
+        ideology = communism
+        popularity = 0.1
+                         }
+		set_party_name = { 
+        ideology = communism 
+        long_name = DDR_communism_party_sed_long 
+        name = DDR_communism_party_sed 
+            }
+			
+		set_party_name = { 
+        ideology = democratic 
+        long_name = DDR_democratic_party_ldpd_long 
+        name = DDR_democratic_party_ldpd 
+            }	
+		}
+	}
+	
+	focus = {
+		id = DDR_establish_a_new_socialist_consitution
+		icon = GFX_Goal_Socialist_Constitution
+		prerequisite = { 
+			focus = DDR_Formation_of_the_SED 
+		}
+		prerequisite = { 
+			focus = DDR_Stunde_Null
+		}
+		available = {
+        has_country_flag = DDR_denazi_flag
+		}
+		x = 0
+		y = 2
+		relative_position_id = DDR_Ostzone
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		#custom_effect_tooltip = DDR_constitution
+		
+		country_event = {
+        id = DDR_event.1
+        days = 1
+        }
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Proclaim_the_Deutsche_Demokratische_Republik
+		icon = GFX_Goal_DDR
+		prerequisite = { 
+			focus = DDR_establish_a_new_socialist_consitution 
+		}
+		x = 0
+		y = 3
+		relative_position_id = DDR_Ostzone
+
+		cost = 2.2
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+		set_cosmetic_tag = DDR
+		}
+		set_politics = {
+	    ruling_party = communism
+            }
+	    
+		}
+	}
+	
+	##political branch##
+	
+	focus = {
+		id = DDR_Volkskammer
+		icon = GFX_Goal_Volkskammer
+		
+		x = 13
+		y = 0
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+        has_completed_focus = DDR_Proclaim_the_Deutsche_Demokratische_Republik
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Hardline_SED
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Volkskammer
+		}
+		mutually_exclusive = { 
+			focus = DDR_Reformation_Wing
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -4
+		y = 1
+
+		available = {
+		has_country_flag = DDR_constitution_sed	
+        }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = DDR_hardline_sed
+		}
+		}
+	}
+	
+	focus = {
+		id = DDR_1_person_2_titles
+		icon = GFX_Goal_pieck
+		prerequisite = { 
+			focus = DDR_Hardline_SED
+		}
+		mutually_exclusive = { 
+			focus = DDR_Split_governmental_titles
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -5
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_country_leader_trait = Chairman_of_the_Socialist_Unity_Party
+		}
+	}
+	
+	focus = {
+		id = DDR_Split_governmental_titles
+		icon = GFX_Goal_ulbricht
+		prerequisite = { 
+			focus = DDR_Hardline_SED
+		}
+		mutually_exclusive = { 
+			focus = DDR_1_person_2_titles
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -3
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		add_ideas = DDR_Pieck
+		create_country_leader = {
+	    name = "Walter Ulbricht"
+	    desc = ""
+	    picture = "r56_Portrait_DDR_Walter_Ulbricht"
+	    expire = "1965.1.1"
+	    ideology = stalinism
+	    traits = {	
+		
+	          }
+           }
+		}
+	}
+	
+	focus = {
+		id = DDR_Chairman_Grotewohl
+		icon = GFX_Goal_Grotewohl
+		prerequisite = { 
+			focus = DDR_1_person_2_titles
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -6
+		y = 3
+
+		available = {
+		has_country_flag = DDR_Pieck_removed1
+        }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = DDR_grotewohl_tt
+		hidden_effect = {
+		create_country_leader = {
+	    name = "Otto Grotewohl"
+	    desc = ""
+	    picture = "r56_portrait_DDR_Grotewohl"
+	    expire = "1965.1.1"
+	    ideology = stalinism
+	    traits = {	
+		
+	          }
+           }
+		}
+		}
+	}
+	
+	focus = {
+		id = DDR_one_germany
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_loyalty_to_moscow
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -5
+		y = 4
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_loyalty_to_moscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { 
+			focus = DDR_Split_governmental_titles
+			focus = DDR_1_person_2_titles
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -4
+		y = 3
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_increase_work_qoutas
+		icon = GFX_goal_stock_exchange
+		prerequisite = { 
+			focus = DDR_loyalty_to_moscow
+		}
+		prerequisite = { 
+			focus = DDR_maintain_party_control_over_the_unions
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -3
+		y = 4
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_formation_of_the_Ministerium_fur_Staatssicherheit
+		icon = GFX_goal_secret_police_red
+		prerequisite = { 
+			focus = DDR_loyalty_to_moscow
+			focus = DDR_maintain_party_control_over_the_unions
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -1
+		y = 4
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = DDR_stasi_tt
+		add_ideas = DDR_stasi
+		hidden_effect = {
+		load_oob = "DDR_stasi"
+		}
+		}
+	}
+	
+	focus = {
+		id = DDR_Reformation_Wing
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Volkskammer
+		}
+		mutually_exclusive = { 
+			focus = DDR_Hardline_SED
+		}
+		relative_position_id = DDR_Volkskammer
+		x = 4
+		y = 1
+
+		available = {
+		has_country_flag = DDR_constitution_liberal
+        }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Relax_agrarian_legislation
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Reformation_Wing
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 4
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_quinquennial_elections
+		icon = GFX_goal_generic_election
+		prerequisite = { 
+			focus = DDR_Relax_agrarian_legislation
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 5
+		y = 3
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_dissolve_the_demokratischer_block
+		icon = GFX_goal_attack_communists
+		prerequisite = { 
+			focus = DDR_Relax_agrarian_legislation
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 3
+		y = 3	
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_spd_supremacy
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_dissolve_the_demokratischer_block
+			focus = DDR_quinquennial_elections
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 4
+		y = 4	
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_recognise_the_Federal_Republic_of_Germany
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_spd_supremacy
+		}
+		mutually_exclusive = { 
+			focus = DDR_The_NDPD
+		}
+		relative_position_id = DDR_Volkskammer
+		x = 5
+		y = 5	
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Formalise_the_FDGB
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Volkskammer
+		}
+		relative_position_id = DDR_Volkskammer
+		x = 0
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_emphasise_union_individuality
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Formalise_the_FDGB
+		}
+		prerequisite = { 
+		focus = DDR_Relax_agrarian_legislation
+		}
+
+		relative_position_id = DDR_Volkskammer
+		x = 1
+		y = 3
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_maintain_party_control_over_the_unions
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Formalise_the_FDGB
+		}
+		available = {
+        has_country_flag = DDR_Communist_hard_SED
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -1
+		y = 3
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_reinforce_the_Zonengrenze
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_loyalty_to_moscow
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -7
+		y = 4
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Errect_the_Berlin_Wall
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_reinforce_the_Zonengrenze
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -7
+		y = 5
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_The_NDPD
+		icon = GFX_Goal_NDPD
+		x = 7
+		y = 5
+		prerequisite = { 
+			focus = DDR_spd_supremacy
+		}
+		mutually_exclusive = { 
+			focus = DDR_recognise_the_Federal_Republic_of_Germany
+		}
+		available = {
+        has_country_flag = DDR_wehrmacht_generals
+		}
+        relative_position_id = DDR_Volkskammer
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		create_country_leader = {
+	    name = "Lothar Bolz"
+	    desc = ""
+	    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	    expire = "1965.1.1"
+	    ideology = stalinism
+	    traits = {	
+		
+	          }
+           }
+		set_party_name = { 
+        ideology = communism 
+        long_name = DDR_communism_party_ndpd_long 
+        name = DDR_communism_party_ndpd
+            } 
+        complete_national_focus = DDR_loyalty_to_moscow 			
+		}
+	}
+	
+	focus = {
+		id = DDR_socialism_with_nationalistic_attributes
+		icon = GFX_
+		x = 8
+		y = 6
+		prerequisite = { 
+			focus = DDR_The_NDPD
+		}
+        relative_position_id = DDR_Volkskammer
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	
+	
+	##Military##
+	
+	focus = {
+		id = DDR_Form_the_NVA
+		icon = GFX_Goal_NVA
+		x = 27
+		y = 0
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Rehabilitate_Wehrmacht_Generals
+		icon = GFX_Goal_Wehr_agreement
+		prerequisite = { 
+			focus = DDR_Form_the_NVA
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = -4
+		y = 1
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+		set_country_flag = DDR_wehrmacht_generals
+		}
+		}
+	}
+	
+	focus = {
+		id = DDR_A_New_generation_of_Generals
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Rehabilitate_Wehrmacht_Generals
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = -4
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Soviet_military_control
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Form_the_NVA
+		}
+		mutually_exclusive = { 
+			focus = DDR_Resist_soviet_influence
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = -2
+		y = 1
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_requisition_soviet_tanks
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Soviet_military_control
+		}
+		mutually_exclusive = { 
+			focus = DDR_Resist_soviet_influence
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = -2
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Resist_soviet_influence
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Form_the_NVA
+		}
+		mutually_exclusive = { 
+			focus = DDR_Soviet_military_control
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = 2
+		y = 1
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_prussian_military_tradition
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { 
+			focus = DDR_Resist_soviet_influence
+			focus = DDR_Soviet_military_control
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = 0
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Post_ww2_military_r&d
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Form_the_NVA
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = 4
+		y = 1
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	###industry###
+	
+
+
+}

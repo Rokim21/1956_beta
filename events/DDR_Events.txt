@@ -1,0 +1,21 @@
+add_namespace = DDR_event
+
+country_event = {
+	id = DDR_event.1
+	title = DDR_event.1.t
+	desc = DDR_event.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DDR_event.1.a
+		set_country_flag = DDR_constitution_sed	
+	}
+	
+	option = {
+		name = DDR_event.1.b
+		set_country_flag = DDR_constitution_liberal	
+		
+	}
+}

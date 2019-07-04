@@ -1,0 +1,10 @@
+
+spriteTypes = {
+
+spriteType = {
+		name = "GFX_Idea_DDR_Ulbricht"
+		texturefile = "gfx/interface/ideas/tib/advisors/r56_Idea_DDR_Ulbricht.dds"
+	}
+
+
+}
