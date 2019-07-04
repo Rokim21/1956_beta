@@ -69,8 +69,6 @@ set_popularities = {
 	neutrality = 50
 }
 
-add_ideas = {
-}
 
 create_country_leader = {
 	name = "Hans Gruber"
