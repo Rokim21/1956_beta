@@ -2,7 +2,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_Goal_Stunde_Null_shine"
-		texturefile = "gfx/interface/goals/Goal_Stunde_Null.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Stunde_Null.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_Stunde_Null.dds"
@@ -33,10 +33,10 @@ spriteTypes = {
 
     SpriteType = {
 		name = "GFX_Goal_SED_shine"
-		texturefile = "gfx/interface/goals/Goal_SED.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_SED.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Goal_SED.dds"
+			animationmaskfile = "gfx/interface/goals/ddr/Goal_SED.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
 			animationrotation = -90.0
 			animationlooping = yes
@@ -48,7 +48,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Goal_SED.dds"
+			animationmaskfile = "gfx/interface/goals/ddr/Goal_SED.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
 			animationrotation = 90.0
 			animationlooping = yes
@@ -64,7 +64,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_DDR_shine"
-		texturefile = "gfx/interface/goals/Goal_DDR.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_DDR.dds"
@@ -95,7 +95,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_Socialist_Constitution_shine"
-		texturefile = "gfx/interface/goals/Goal_Socialist_Constitution.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Socialist_Constitution.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_Socialist_Constitution.dds"
@@ -126,7 +126,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_Volkskammer_shine"
-		texturefile = "gfx/interface/goals/Goal_Volkskammer.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Volkskammer.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_Volkskammer.dds"
@@ -157,7 +157,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_ddr_shovels_shine"
-		texturefile = "gfx/interface/goals/Goal_ddr_shovels.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_ddr_shovels.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_ddr_shovels.dds"
@@ -188,7 +188,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_socialism_forwards_shine"
-		texturefile = "gfx/interface/goals/Goal_socialism_forwards.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_socialism_forwards.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_socialism_forwards.dds"
@@ -219,7 +219,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_NVA_shine"
-		texturefile = "gfx/interface/goals/Goal_NVA.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_NVA.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_NVA.dds"
@@ -250,7 +250,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_NDPD_shine"
-		texturefile = "gfx/interface/goals/Goal_NDPD.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_NDPD.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_NDPD.dds"
@@ -281,7 +281,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_Wehr_agreement_shine"
-		texturefile = "gfx/interface/goals/Goal_Wehr_agreement.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Wehr_agreement.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_Wehr_agreement.dds"
@@ -312,7 +312,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_pieck_shine"
-		texturefile = "gfx/interface/goals/Goal_pieck.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_pieck.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_pieck.dds"
@@ -343,7 +343,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_ulbricht_shine"
-		texturefile = "gfx/interface/goals/Goal_ulbricht.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_ulbricht.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_ulbricht.dds"
@@ -374,7 +374,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_Goal_Grotewohl_shine"
-		texturefile = "gfx/interface/goals/Goal_Grotewohl.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Grotewohl.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/Goal_Grotewohl.dds"

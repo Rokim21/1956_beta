@@ -2,67 +2,67 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_Goal_Stunde_Null"
-		texturefile = "gfx/interface/goals/Goal_Stunde_Null.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Stunde_Null.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_SED"
-		texturefile = "gfx/interface/goals/Goal_SED.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_SED.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_DDR"
-		texturefile = "gfx/interface/goals/Goal_DDR.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_Socialist_Constitution"
-		texturefile = "gfx/interface/goals/Goal_Socialist_Constitution.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Socialist_Constitution.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_Volkskammer"
-		texturefile = "gfx/interface/goals/Goal_Volkskammer.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Volkskammer.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_ddr_shovels"
-		texturefile = "gfx/interface/goals/Goal_ddr_shovels.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_ddr_shovels.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_socialism_forwards"
-		texturefile = "gfx/interface/goals/Goal_socialism_forwards.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_socialism_forwards.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_NVA"
-		texturefile = "gfx/interface/goals/Goal_NVA.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_NVA.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_NDPD"
-		texturefile = "gfx/interface/goals/Goal_NDPD.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_NDPD.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_Wehr_agreement"
-		texturefile = "gfx/interface/goals/Goal_Wehr_agreement.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Wehr_agreement.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_pieck"
-		texturefile = "gfx/interface/goals/Goal_pieck.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_pieck.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_ulbricht"
-		texturefile = "gfx/interface/goals/Goal_ulbricht.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_ulbricht.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_Goal_Grotewohl"
-		texturefile = "gfx/interface/goals/Goal_Grotewohl.dds"
+		texturefile = "gfx/interface/goals/ddr/Goal_Grotewohl.dds"
 	}
 
 
