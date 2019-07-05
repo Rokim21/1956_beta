@@ -66,7 +66,44 @@ spriteTypes = {
 		name = "GFX_mechanised_infantry_b_medium"
 		texturefile = "gfx/interface/technologies/infantry/mechanized/r56_tech_mechanized_equipment_05.dds"
 	}
+	
+###---> DDR <><> <><> <><>
 
+#-> Motorized <><>
+SpriteType = {
+		name = "GFX_GER_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/infantry/motorized/r56_tech_GER_motorized_equipment_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/infantry/mechanized/r56_tech_GER_mechanized_equipment_01.dds"
+	}
+
+#-> Mechanized <><>
+	SpriteType = {
+		name = "GFX_DDR_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_DDR_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/GER_mechanized_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DDR_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/infantry/mechanized/r56_tech_SOV_mechanized_equipment_03.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DDR_mechanised_infantry_a_medium"
+		texturefile = "gfx/interface/technologies/infantry/mechanized/r56_tech_SOV_mechanized_equipment_04.dds"
+	}
+	SpriteType = {
+		name = "GFX_DDR_mechanised_infantry_b_medium"
+		texturefile = "gfx/interface/technologies/infantry/mechanized/r56_tech_SOV_mechanized_equipment_05.dds"
+	}
+	
 
 ###---> AST <><> <><> <><>
 #-> Infantry equipment <><>
