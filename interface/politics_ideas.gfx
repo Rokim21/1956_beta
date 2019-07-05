@@ -1,0 +1,108 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_ideology_liberal_conservatism"
+		texturefile = "gfx/interface/politics/ideology_liberal_conservatism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_agrarianism"
+		texturefile = "gfx/interface/politics/ideology_agrarianism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_national_unity_government"
+		texturefile = "gfx/interface/politics/ideology_national_unity_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_civilian_dictatorship"
+		texturefile = "gfx/interface/politics/ideology_civilian_dictatorship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_stalinism"
+		texturefile = "gfx/interface/politics/ideology_stalinism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_libertarian_socialism"
+		texturefile = "gfx/interface/politics/ideology_libertarian_socialism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_democratic_socialism"
+		texturefile = "gfx/interface/politics/ideology_democratic_socialism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_oligarchic_dictatorship"
+		texturefile = "gfx/interface/politics/ideology_oligarchic_dictatorship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_authoritarian_democracy"
+		texturefile = "gfx/interface/politics/ideology_authoritarian_democracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_provisionnal_government"
+		texturefile = "gfx/interface/politics/ideology_provisionnal_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_nazism"
+		texturefile = "gfx/interface/politics/ideology_nazism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_ultranationalism"
+		texturefile = "gfx/interface/politics/ideology_ultranationalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_falangism"
+		texturefile = "gfx/interface/politics/ideology_falangism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_liberalism"
+		texturefile = "gfx/interface/politics/ideology_liberalism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_military_dictatorship"
+		texturefile = "gfx/interface/politics/ideology_military_dictatorship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_revolutionnary_socialism"
+		texturefile = "gfx/interface/politics/ideology_revolutionnary_socialism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_social_democracy"
+		texturefile = "gfx/interface/politics/ideology_social_democracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_leninism"
+		texturefile = "gfx/interface/politics/ideology_leninism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_fascism"
+		texturefile = "gfx/interface/politics/ideology_fascism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_conservatism"
+		texturefile = "gfx/interface/politics/ideology_conservatism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ideology_absolute_monarchism"
+		texturefile = "gfx/interface/politics/ideology_absolute_monarchism.dds"
+	}
+
+}

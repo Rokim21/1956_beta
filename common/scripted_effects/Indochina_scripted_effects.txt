@@ -1,0 +1,24 @@
+remove_all_ideologies_flags = {
+	hidden_effect = {
+		clr_country_flag = liberalism_ideology_flag
+		clr_country_flag = conservatism_ideology_flag
+	}
+}
+
+set_ideology_liberalism = {
+	hidden_effect = {
+		remove_all_ideologies_flags = yes
+		add_ideas = liberalism_ideology
+		set_country_flag = liberalism_ideology_flag
+	}
+	custom_effect_tooltip = set_ideology_liberalism_tt
+}
+
+set_ideology_conservatism = {
+	hidden_effect = {
+		remove_all_ideologies_flags = yes
+		add_ideas = conservatism_ideology
+		set_country_flag = conservatism_ideology_flag
+	}
+	custom_effect_tooltip = set_ideology_conservatism_tt
+}

@@ -127,7 +127,6 @@ country_event = {
 					remove_state_core = 691
 				}
 			}
-			
 		}
 		USA = {
 			if = { limit = { 696 = { is_controlled_by = ENG } }
@@ -227,6 +226,7 @@ country_event = {
 
 	option = { 	
 		name = usa.6.a
+		set_ideology_liberalism = yes
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -263,6 +263,7 @@ country_event = {
 
 	option = { 
 		name = usa.6.b
+		set_ideology_conservatism = yes
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -297,7 +298,7 @@ country_event = {
 		create_country_leader = {
 			name = "Alf Landon"
 			desc = "POLITICS_ALF_LANDON_DESC"
-			picture = "r56_portrait_USA_Alf_Landon.dds"
+			picture = "portrait_USA_alf_landon.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -818,7 +819,7 @@ country_event = {
 		}
 		set_political_party = {
 			ideology = democratic
-			popularity = 0.5
+			popularity = 50
 		}
 		remove_ideas = great_depression
 		add_war_support = 0.2
@@ -895,7 +896,7 @@ country_event = {
 						}
 					}
 				}
-			}
+			}		
 		}
 
 		custom_effect_tooltip = usa.17.a_tt
@@ -1114,7 +1115,7 @@ country_event = {
 		}
 		set_political_party = {
 			ideology = democratic
-			popularity = 0.5
+			popularity = 50
 		}
 		remove_ideas = great_depression
 		add_war_support = 0.2
@@ -1660,7 +1661,10 @@ country_event = {
 
 	immediate = {
 		set_country_flag = USA_congress_investment
-		clear_global_event_target = USA_congress_investment_state
+		if = {
+			limit = { has_event_target = USA_congress_investment_state }
+			clear_global_event_target = USA_congress_investment_state
+		}
 		random_list = {
 			25 = {
 				modifier = {

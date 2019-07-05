@@ -1,0 +1,67 @@
+﻿l_english:
+ politics:0 "Politics"
+ government_ideology:0 "Government Ideology"
+
+ sub_ideology_name_key:0 "[Root.GetCountrySubideology]"
+
+
+ liberalism_ideology:0 "Liberalism"
+ social_democracy_ideology:0 "Social Democracy"
+ conservatism_ideology:0 "Conservatism"
+ agrarianism_ideology:0 "Agrarianism"
+ liberal_conservatism_ideology:0 "Liberal Conservatism"
+ national_unity_government_ideology:0 "National Unity Government"
+
+ leninism_ideology:0 "Leninism"
+ stalinism_ideology:0 "Stalinism"
+ democratic_socialism_ideology:0 "Democratic Socialism"
+ revolutionnary_socialism_ideology:0 "Revolutionnary Socialism"
+ libertarian_socialism_ideology:0 "Libertarian Socialism"
+
+ military_dictatorship_ideology:0 "Military Dictatorship"
+ absolute_monarchism_ideology:0 "Absolute Monarchy"
+ civilian_dictatorship_ideology:0 "Civilian Dictatorship"
+ oligarchic_dictatorship_ideology:0 "Oligarchic Dictatorship"
+ authoritarian_democracy_ideology:0 "Authoritarian Democracy"
+ provisionnal_government_ideology:0 "Provisionnal Government"
+
+ fascism_ideology_politics:0 "Fascism"
+ nazism_ideology:0 "Nazism"
+ falangism_ideology:0 "Falangism"
+ ultranationalism_ideology:0 "Ultranationalism"
+ 
+
+
+
+ set_ideology_liberalism_tt:0 "The §YLiberals§! Will Take Power\n"
+ set_ideology_conservatism_tt:0 "The §BConservatives§! Will Take Power\n"
+
+
+
+
+
+ liberalism_ideology_flag:0 "The Liberals Are In Power"
+ conservatism_ideology_flag:0 "The Conservatives Are In Power"
+ liberal_conservatism_ideology_flag:0 "The Liberal-Conservatives Are In Power"
+ agrarianism_ideology_flag:0 "The Agrarians Are In Power"
+ social_democracy_ideology_flag:0 "The Social Democrats Are In Power"
+ national_unity_government_ideology_flag:0 "A National Unity Government Is In Power"
+ leninism_ideology_flag:0 "The Leninists Are In Power"
+ democratic_socialism_ideology_flag:0 "The Democratic Socialists Are In Power"
+ stalinism_ideology_flag:0 "The Stalinists Are In Power"
+ revolutionnary_socialism_ideology_flag:0 "The Revolutionnary Socialists Are In Power"
+ libertarian_socialism_ideology_flag:0 "The Libertarian Socialists Are In Power"
+ absolute_monarchism_ideology_flag:0 "The Country Is An Absolute Monarchy"
+ military_dictatorship_ideology_flag:0 "The Country Is A Military Dictatorship"
+ military_civilian_ideology_flag:0 "The Country Is A Civilian Dictatorship"
+ oligarchic_dictatorship_ideology_flag:0 "The Country Is An Oligarhic Dictatorship"
+ ideology_authoritarian_democracy_flag:0 "The Country Is An Authoritarian Democracy"
+ provisionnal_government_ideology_flag:0 "The Country Is Under A Provisionnal Government"
+ fascism_ideology_flag:0 "The Fascists Are In Power"
+ nazism_ideology_politics:0 "The National Socialists Are In Power"
+ falangism_ideology_flag:0 "The Falangists Are In Power"
+ ultranationalism_ideology_flag:0 "The Ultranationalists Are In Power"
+
+ ERROR_GOVERNMENT_KEY:0 "ERROR"
+ LIBERALISM_GOVERNMENT_KEY:0 "Liberalism"
+ CONSERVATISM_GOVERNMENT_KEY:0 "Conservatism"

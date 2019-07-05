@@ -1,0 +1,387 @@
+ideas = {
+
+	government_ideology = {
+		liberalism_ideology = {
+
+			picture = ideology_liberalism
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = democratic
+				has_country_flag = liberalism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		social_democracy_ideology = {
+
+			picture = ideology_social_democracy
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = democratic
+				has_country_flag = social_democracy_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		conservatism_ideology = {
+
+			picture = ideology_conservatism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = democratic
+				has_country_flag = conservatism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		liberal_conservatism_ideology = {
+
+			picture = ideology_liberal_conservatism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = democratic
+				has_country_flag = liberal_conservatism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		agrarianism_ideology = {
+
+			picture = ideology_agrarianism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = democratic
+				has_country_flag = agrarianism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		national_unity_government_ideology = {
+
+			picture = ideology_national_unity_government
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = democratic
+				has_country_flag = national_unity_government_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		leninism_ideology = {
+
+			picture = ideology_leninism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = communism
+				has_country_flag = leninism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		democratic_socialism_ideology = {
+
+			picture = ideology_democratic_socialism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = communism
+				has_country_flag = democratic_socialism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		stalinism_ideology = {
+
+			picture = ideology_stalinism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = communism
+				has_country_flag = stalinism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		revolutionnary_socialism_ideology = {
+
+			picture = ideology_revolutionnary_socialism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = communism
+				has_country_flag = revolutionnary_socialism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		libertarian_socialism_ideology = {
+
+			picture = ideology_libertarian_socialism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = communism
+				has_country_flag = libertarian_socialism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		absolute_monarchism_ideology = {
+
+			picture = ideology_absolute_monarchism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = neutrality
+				has_country_flag = absolute_monarchism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		military_dictatorship_ideology = {
+
+			picture = ideology_military_dictatorship
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = neutrality
+				has_country_flag = military_dictatorship_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		civilian_dictatorship_ideology = {
+
+			picture = ideology_civilian_dictatorship
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = neutrality
+				has_country_flag = civilian_dictatorship_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		oligarchic_dictatorship_ideology = {
+
+			picture = ideology_oligarchic_dictatorship
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = neutrality
+				has_country_flag = oligarchic_dictatorship_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		authoritarian_democracy_ideology = {
+
+			picture = ideology_authoritarian_democracy
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = neutrality
+				has_country_flag = ideology_authoritarian_democracy_flag
+			}
+
+			traits = {
+			}
+		}
+
+		provisionnal_government_ideology = {
+
+			picture = ideology_provisionnal_government
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = neutrality
+				has_country_flag = provisionnal_government_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		fascism_ideology_politics = {
+
+			picture = ideology_fascism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = fascism
+				has_country_flag = fascism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		nazism_ideology = {
+
+			picture = ideology_nazism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = fascism
+				has_country_flag = nazism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		falangism_ideology = {
+
+			picture = ideology_falangism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = fascism
+				has_country_flag = falangism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		ultranationalism_ideology = {
+
+			picture = ideology_ultranationalism
+			
+			cancel_if_invalid = yes
+			allowed = {
+				always = yes
+			}
+
+			available = {
+				has_government = fascism
+				has_country_flag = ultranationalism_ideology_flag
+			}
+
+			traits = {
+			}
+		}
+
+		
+
+		
+
+	}
+
+}

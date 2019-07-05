@@ -1,5 +1,3 @@
-#####---------------------------------------------------------------------> Mod by Sig "GreatExperiment" Altre
-
 idea_categories = {
 
 	hidden_ideas = {
@@ -14,6 +12,13 @@ idea_categories = {
 		
 		cost = 0
 		removal_cost = -1
+	}
+
+	politics = {
+		slot = government_ideology
+		
+		cost = 0
+		removal_cost = 0
 	}
 	
 	government = {
@@ -52,23 +57,4 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
-	
-###------> *Expanded Ideas <><> <><> <><> <><> <><>
-
-	etgi_ideas = {
-		slot = r56i_laws_category_security
-		slot = r56i_laws_leadership
-		slot = r56i_laws_category_gender
-		slot = r56i_laws_social
-		slot = r56i_laws_war
-		
-		cost = 150
-		removal_cost = 0
-	
-	}
-	
-###------> X <><> <><> <><> <><> <><>
-
 }
-
-#####---------------------------------------------------------------------> End

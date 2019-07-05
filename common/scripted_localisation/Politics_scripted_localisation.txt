@@ -1,0 +1,22 @@
+defined_text = {
+	name = GetCountrySubideology
+	text = {
+		trigger = {
+			THIS = {
+				has_country_flag = liberalism_ideology_flag 
+			}
+		}
+		localization_key = LIBERALISM_GOVERNMENT_KEY
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_country_flag = conservatism_ideology_flag 
+			}
+		}
+		localization_key = CONSERVATISM_GOVERNMENT_KEY
+	}
+	text = {
+		localization_key = ERROR_GOVERNMENT_KEY
+	}
+}
