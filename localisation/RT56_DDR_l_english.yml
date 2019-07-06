@@ -49,6 +49,10 @@
  
  DDR_Chairman_Grotewohl:0 "Chairman Grotewohl"
  
+ DDR_Reformation_Wing:0 "Reformation Wing"
+ 
+ DDR_Hardline_SED:0 "Hardline SED"
+ 
  ################################### Flags                \n   §H§!
  
  DDR_constitution_sed:0 "The Constitution of the Hardline SED"
@@ -68,6 +72,7 @@
  DDR_Pieck:0 "Wilhelm Pieck"
  Ulbricht:0 "Walter Ulbricht"
  DDR_stasi:0 "The Stasi"
+ DDR_reform:0 "A Change in Direction"
  
  
 ################################### Events                  \n   §H§!
@@ -95,6 +100,8 @@
  DDR_denazi:0 "Replace §YDenazification§! with §YSuccessful Denazification§! \n Effective change: \n Political Power Gain: §G+15%§! \n Weekly Stability: §G+2.00%§! \n Daily Fascism Support: §G-0.05§!"
  DDR_stasi_tt:0 "Forms the §YFelix Dzerzhinsky Guards Regiment 1§! and §YFelix Dzerzhinsky Guards Regiment 2§! in §YBerlin§!\n"
  DDR_grotewohl_tt:0 "§YOtto Grotewohl Becomes the Chairman of the SED§!"
+ DDR_Lothar_TT:0 "§YLothar Bolz Becomes the Chairman of the SED§! \n" 
+ DDR_ulbricht_leader_TT:0 "§YWalter Ulbricht Becomes the Chairman of the SED§! \n" 
  
  DDR_Stunde_Null_dec:0 "Stunde Null"
  DDR_Stunde_Null_dec_desc:0 "Stunde Null"
@@ -102,6 +109,18 @@
  DR_Fascist_Raid_desc:0 "Anti-Fascist Raid"
  DDR_Set_up_silence_camps:0 "Set up Silence Camps"
  DDR_Volksammer_dec:0 "The Volksammer"
+ DDR_congress:1 "The Volksammer"
+ DDR_congress_desc:1 "With the inception of our great nation "
+ DDR_congress_senate_support_header:0 "§HState Council§!"
+ DDR_congress_house_support_header:0 "§HCouncil of Ministers§!"
+ DDR_congress_senate_support_amount:0 "§G[?DDR.senators_support]§! / §Y[?DDR.senators_total]§!"
+ DDR_congress_house_support_amount:0 "§G[?DDR.representatives_support]§! / §Y[?DDR.representatives_total]§!"
+ DDR_small_lobby_effort:1 "Small Lobbying Effort"
+ DDR_small_lobby_effort_desc:0 "It pays to have an ear to the ground of the Capitol, and to make sure some influential people know what the administration is planning."
+ DDR_medium_lobby_effort:1 "Medium Lobbying Effort"
+ DDR_medium_lobby_effort_desc:0 "A concerted effort to get the Administration's point across will no doubt pay off in the long run."
+ DDR_special_measures:1 "Special Measures"
+ DDR_special_measures_desc:0 "Sometimes, Members of Congress require a more direct, personal incentive to realize that what is best for their bank account is also what is best for their country."
 
  
  

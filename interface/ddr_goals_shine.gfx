@@ -403,6 +403,130 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+	SpriteType = {
+		name = "GFX_Goal_DDR_Reform_shine"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR_Reform.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_DDR_Reform.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_DDR_Reform.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_Hardline_communism_shine"
+		texturefile = "gfx/interface/goals/ddr/Goal_Hardline_communism.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_Hardline_communism.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_Hardline_communism.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_Assist_Cuba_shine"
+		texturefile = "gfx/interface/goals/ddr/Goal_Assist_Cuba.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_Assist_Cuba.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_Assist_Cuba.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_Assist_Mozambique_shine"
+		texturefile = "gfx/interface/goals/ddr/Goal_Assist_Mozambique.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_Assist_Mozambique.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Goal_Assist_Mozambique.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
 
 }
 

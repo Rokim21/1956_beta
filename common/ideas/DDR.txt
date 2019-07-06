@@ -62,6 +62,21 @@ DDR_a_divided_nation = {
 			stability_factor = 0.10		 				 
 			}
 		}
+		
+	DDR_reform = {
+			picture = haven_of_tolerance
+			allowed = {
+			    always = no	
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}			
+			modifier = {
+			democratic_acceptance = 85			 				 
+			}
+		}
 
 DDR_War_torn_country = {
 			picture = ddr_war_torn

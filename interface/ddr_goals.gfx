@@ -64,6 +64,26 @@ spriteTypes = {
 		name = "GFX_Goal_Grotewohl"
 		texturefile = "gfx/interface/goals/ddr/Goal_Grotewohl.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_Goal_DDR_Reform"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR_Reform.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_Hardline_communism"
+		texturefile = "gfx/interface/goals/ddr/Goal_Hardline_communism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_Assist_Cuba"
+		texturefile = "gfx/interface/goals/ddr/Goal_Assist_Cuba.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_Assist_Mozambique"
+		texturefile = "gfx/interface/goals/ddr/Goal_Assist_Mozambique.dds"
+	}
 
 
 }

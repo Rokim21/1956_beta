@@ -236,7 +236,7 @@ focus = {
 	
 	focus = {
 		id = DDR_Hardline_SED
-		icon = GFX_
+		icon = GFX_Goal_Hardline_communism
 		prerequisite = { 
 			focus = DDR_Volkskammer
 		}
@@ -323,6 +323,8 @@ focus = {
 
 		completion_reward = {
 		add_ideas = DDR_Pieck
+		custom_effect_tooltip = DDR_ulbricht_leader_TT
+		hidden_effect = {
 		create_country_leader = {
 	    name = "Walter Ulbricht"
 	    desc = ""
@@ -333,7 +335,8 @@ focus = {
 		
 	          }
            }
-		}
+		}	
+	}
 	}
 	
 	focus = {
@@ -403,6 +406,263 @@ focus = {
 	}
 	
 	focus = {
+		id = DDR_one_germany
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_loyalty_to_moscow
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -5
+		y = 4
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_anti_imperialist_solidarity
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_increase_work_qoutas
+		}
+		prerequisite = { 
+			focus = DDR_one_germany
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -1
+		y = 5
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_aid_mozambique
+		icon = GFX_Goal_Assist_Mozambique
+		prerequisite = { 
+			focus = DDR_anti_imperialist_solidarity
+		}
+			
+		relative_position_id = DDR_Volkskammer
+		x = 0
+		y = 6
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_aid_cuba
+		icon = GFX_Goal_Assist_Cuba
+		prerequisite = { 
+			focus = DDR_anti_imperialist_solidarity
+		}
+			
+		relative_position_id = DDR_Volkskammer
+		x = -2
+		y = 6
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_soviet_recognition
+		icon = GFX_
+		mutually_exclusive = {focus = DDR_condemn_revisionism}
+		prerequisite = { 
+			focus = DDR_aid_cuba
+		}
+		prerequisite = { 
+			focus = DDR_aid_mozambique
+		}
+			
+		relative_position_id = DDR_Volkskammer
+		x = -1
+		y = 7
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_condemn_revisionism
+		icon = GFX_
+		mutually_exclusive = {focus = DDR_soviet_recognition}
+		prerequisite = { 
+			focus = DDR_aid_cuba
+		}
+		prerequisite = { 
+			focus = DDR_aid_mozambique
+		}
+			
+		relative_position_id = DDR_Volkskammer
+		x = -3
+		y = 7
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Brigaden_der_freundschaft
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_anti_imperialist_solidarity
+		}
+		
+			
+		relative_position_id = DDR_Volkskammer
+		x = 2
+		y = 6
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_a_strong_policeforce
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_one_germany
+			focus = DDR_formation_of_the_Ministerium_fur_Staatssicherheit
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -4
+		y = 5
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_crackdown_on_migration_west
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_a_strong_policeforce
+		}
+		prerequisite = { 
+			focus = DDR_Errect_the_Berlin_Wall
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -7
+		y = 6
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	
+	
+	focus = {
 		id = DDR_loyalty_to_moscow
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { 
@@ -439,7 +699,7 @@ focus = {
 			focus = DDR_maintain_party_control_over_the_unions
 		}
 		relative_position_id = DDR_Volkskammer
-		x = -3
+		x = -1
 		y = 4
 
 
@@ -462,11 +722,15 @@ focus = {
 		id = DDR_formation_of_the_Ministerium_fur_Staatssicherheit
 		icon = GFX_goal_secret_police_red
 		prerequisite = { 
-			focus = DDR_loyalty_to_moscow
-			focus = DDR_maintain_party_control_over_the_unions
+			focus = DDR_loyalty_to_moscow	
 		}
+		prerequisite = { 
+			focus = DDR_maintain_party_control_over_the_unions
+			
+		}
+		
 		relative_position_id = DDR_Volkskammer
-		x = -1
+		x = -3
 		y = 4
 
 
@@ -491,7 +755,7 @@ focus = {
 	
 	focus = {
 		id = DDR_Reformation_Wing
-		icon = GFX_
+		icon = GFX_Goal_DDR_Reform
 		prerequisite = { 
 			focus = DDR_Volkskammer
 		}
@@ -517,13 +781,23 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+	    add_ideas = DDR_reform
+		create_country_leader = {
+	    name = "wilhelm külz"
+	    desc = ""
+	    picture = "r56_portrait_DDR_Wilhelm_Kulz"
+	    expire = "1965.1.1"
+	    ideology = leninism
+	    traits = {	
 		
+	          }
+           }
 		}
 	}
 	
 	focus = {
 		id = DDR_Relax_agrarian_legislation
-		icon = GFX_
+		icon = GFX_goal_agrarian_reform
 		prerequisite = { 
 			focus = DDR_Reformation_Wing
 		}
@@ -531,6 +805,33 @@ focus = {
 		relative_position_id = DDR_Volkskammer
 		x = 4
 		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_Detente
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_recognise_the_Federal_Republic_of_Germany
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 4
+		y = 6
 
 
 		cost = 5
@@ -688,6 +989,7 @@ focus = {
 	focus = {
 		id = DDR_emphasise_union_individuality
 		icon = GFX_
+		mutually_exclusive = {focus = DDR_maintain_party_control_over_the_unions }
 		prerequisite = { 
 			focus = DDR_Formalise_the_FDGB
 		}
@@ -718,6 +1020,7 @@ focus = {
 	focus = {
 		id = DDR_maintain_party_control_over_the_unions
 		icon = GFX_
+		mutually_exclusive = {focus = DDR_emphasise_union_individuality }
 		prerequisite = { 
 			focus = DDR_Formalise_the_FDGB
 		}
@@ -822,21 +1125,24 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		custom_effect_tooltip = DDR_Lothar_TT
+		hidden_effect = {
 		create_country_leader = {
 	    name = "Lothar Bolz"
 	    desc = ""
 	    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	    expire = "1965.1.1"
-	    ideology = stalinism
+	    ideology = anti_revisionism
 	    traits = {	
 		
 	          }
            }
+		   }
 		set_party_name = { 
         ideology = communism 
         long_name = DDR_communism_party_ndpd_long 
         name = DDR_communism_party_ndpd
-            } 
+            }		
         complete_national_focus = DDR_loyalty_to_moscow 			
 		}
 	}
