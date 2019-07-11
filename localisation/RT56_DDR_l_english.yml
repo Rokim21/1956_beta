@@ -72,7 +72,7 @@
  DDR_Pieck:0 "Wilhelm Pieck"
  Ulbricht:0 "Walter Ulbricht"
  DDR_stasi:0 "The Stasi"
- DDR_reform:0 "A Change in Direction"
+ DDR_reform:0 "Westalgia"
  
  
 ################################### Events                  \n   §H§!
@@ -102,6 +102,7 @@
  DDR_grotewohl_tt:0 "§YOtto Grotewohl Becomes the Chairman of the SED§!"
  DDR_Lothar_TT:0 "§YLothar Bolz Becomes the Chairman of the SED§! \n" 
  DDR_ulbricht_leader_TT:0 "§YWalter Ulbricht Becomes the Chairman of the SED§! \n" 
+ DDR_Kulz:0 "§YWilhelm külz Becomes the Chairman of the SED§! \n"
  
  DDR_Stunde_Null_dec:0 "Stunde Null"
  DDR_Stunde_Null_dec_desc:0 "Stunde Null"

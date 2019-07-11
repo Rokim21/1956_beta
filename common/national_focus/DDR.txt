@@ -782,6 +782,8 @@ focus = {
 
 		completion_reward = {
 	    add_ideas = DDR_reform
+		custom_effect_tooltip = DDR_Kulz
+		hidden_effect = {
 		create_country_leader = {
 	    name = "wilhelm külz"
 	    desc = ""
@@ -792,6 +794,7 @@ focus = {
 		
 	          }
            }
+		}
 		}
 	}
 	
@@ -1253,7 +1256,7 @@ focus = {
 	
 	focus = {
 		id = DDR_Soviet_military_control
-		icon = GFX_
+		icon = GFX_Goal_Sov_military_control
 		prerequisite = { 
 			focus = DDR_Form_the_NVA
 		}
@@ -1311,7 +1314,7 @@ focus = {
 	
 	focus = {
 		id = DDR_Resist_soviet_influence
-		icon = GFX_
+		icon = GFX_Goal_Reject_Soviet_control
 		prerequisite = { 
 			focus = DDR_Form_the_NVA
 		}
