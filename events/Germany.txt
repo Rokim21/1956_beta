@@ -5208,6 +5208,7 @@ country_event = {
 				add_state_core = 57
 				add_state_core = 58
 				add_state_core = 59
+				add_state_core = 789
 			}
 			DDR = {
 				add_state_core = 60
@@ -5217,6 +5218,7 @@ country_event = {
 				add_state_core = 65
 				add_state_core = 66
 				add_state_core = 67
+				add_state_core = 790
 			}
 			POL = {
 				add_state_core = 66
@@ -5268,6 +5270,7 @@ country_event = {
 			add_state_core = 57
 			add_state_core = 58
 			add_state_core = 59
+			add_state_core = 789
 		}
 		DDR = {
 			add_state_core = 60
@@ -5277,6 +5280,7 @@ country_event = {
 			add_state_core = 65
 			add_state_core = 66
 			add_state_core = 67
+			add_state_core = 790
 		
 		}
 		POL = {

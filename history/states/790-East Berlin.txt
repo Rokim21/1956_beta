@@ -1,0 +1,37 @@
+state={
+	id=790
+	name="STATE_790"
+	provinces={
+		11505 
+	}
+	history={
+		owner = GER
+		victory_points = {
+			11505 25 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 3
+			anti_air_building = 1
+			air_base = 0
+
+		}
+		add_core_of = GER
+		add_core_of = DDR
+		1939.1.1 = {
+			buildings = {
+				air_base = 0
+				anti_air_building = 5
+				arms_factory = 6
+				industrial_complex = 6
+
+			}
+
+		}
+
+	}
+	manpower=2132456
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}
