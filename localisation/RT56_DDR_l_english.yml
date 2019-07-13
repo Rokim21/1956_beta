@@ -109,19 +109,6 @@
  DDR_Fascist_Raid:0 "Crackdown on National Socialists"
  DR_Fascist_Raid_desc:0 "Anti-Fascist Raid"
  DDR_Set_up_silence_camps:0 "Set up Silence Camps"
- DDR_Volksammer_dec:0 "The Volksammer"
- DDR_congress:1 "The Volksammer"
- DDR_congress_desc:1 "With the inception of our great nation "
- DDR_congress_senate_support_header:0 "§HState Council§!"
- DDR_congress_house_support_header:0 "§HCouncil of Ministers§!"
- DDR_congress_senate_support_amount:0 "§G[?DDR.senators_support]§! / §Y[?DDR.senators_total]§!"
- DDR_congress_house_support_amount:0 "§G[?DDR.representatives_support]§! / §Y[?DDR.representatives_total]§!"
- DDR_small_lobby_effort:1 "Small Lobbying Effort"
- DDR_small_lobby_effort_desc:0 "It pays to have an ear to the ground of the Capitol, and to make sure some influential people know what the administration is planning."
- DDR_medium_lobby_effort:1 "Medium Lobbying Effort"
- DDR_medium_lobby_effort_desc:0 "A concerted effort to get the Administration's point across will no doubt pay off in the long run."
- DDR_special_measures:1 "Special Measures"
- DDR_special_measures_desc:0 "Sometimes, Members of Congress require a more direct, personal incentive to realize that what is best for their bank account is also what is best for their country."
 
  
  

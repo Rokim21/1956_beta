@@ -16,17 +16,4 @@ DDR_Stunde_Null_dec = {
 	}
 }
 
-DDR_congress = {
-	icon = usa_congress
-	allowed = {
-		original_tag = DDR
-	}
-	visible = {
-		has_completed_focus = DDR_Volkskammer
-	}
-
-	scripted_gui = ddr_congress_decision_ui	
-
-	priority = 85
-}
 
