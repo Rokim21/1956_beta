@@ -406,39 +406,10 @@ focus = {
 	}
 	
 	focus = {
-		id = DDR_one_germany
-		icon = GFX_
-		prerequisite = { 
-			focus = DDR_loyalty_to_moscow
-		}
-		relative_position_id = DDR_Volkskammer
-		x = -5
-		y = 4
-
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		
-		}
-	}
-	
-	focus = {
 		id = DDR_anti_imperialist_solidarity
 		icon = GFX_
 		prerequisite = { 
 			focus = DDR_increase_work_qoutas
-		}
-		prerequisite = { 
-			focus = DDR_one_germany
 		}
 		relative_position_id = DDR_Volkskammer
 		x = -1
@@ -515,7 +486,7 @@ focus = {
 	}
 	
 	focus = {
-		id = DDR_soviet_recognition
+		id = DDR_destalinization
 		icon = GFX_
 		mutually_exclusive = {focus = DDR_condemn_revisionism}
 		prerequisite = { 
@@ -548,12 +519,15 @@ focus = {
 	focus = {
 		id = DDR_condemn_revisionism
 		icon = GFX_
-		mutually_exclusive = {focus = DDR_soviet_recognition}
+		mutually_exclusive = {focus = DDR_destalinization}
 		prerequisite = { 
 			focus = DDR_aid_cuba
 		}
 		prerequisite = { 
 			focus = DDR_aid_mozambique
+		}
+		prerequisite = { 
+			focus = DDR_a_strong_policeforce
 		}
 			
 		relative_position_id = DDR_Volkskammer
@@ -577,10 +551,92 @@ focus = {
 	}
 	
 	focus = {
+		id = DDR_albanian_partnership
+		icon = GFX_
+		mutually_exclusive = {focus = DDR_destalinization}
+		prerequisite = { 
+			focus = DDR_condemn_revisionism
+		}
+			
+		relative_position_id = DDR_Volkskammer
+		x = -4
+		y = 8
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_an_equal_to_Russia
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_condemn_revisionism
+			focus = DDR_destalinization
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -2
+		y = 8
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_revoke_Military_restrictions
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_an_equal_to_Russia
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -2
+		y = 9
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
 		id = DDR_Brigaden_der_freundschaft
 		icon = GFX_
 		prerequisite = { 
 			focus = DDR_anti_imperialist_solidarity
+            focus = DDR_a_free_society
 		}
 		
 			
@@ -643,6 +699,61 @@ focus = {
 		relative_position_id = DDR_Volkskammer
 		x = -7
 		y = 6
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_anti_nato_propaganda
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_crackdown_on_migration_west
+		}
+		prerequisite = { 
+			focus = DDR_one_germany
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -6
+		y = 7
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_break_the_border
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_anti_nato_propaganda
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -6
+		y = 8
 
 
 		cost = 5
@@ -833,8 +944,121 @@ focus = {
 		}
 		
 		relative_position_id = DDR_Volkskammer
-		x = 4
+		x = 5
 		y = 6
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = DDR_Begin_western_negotiations
+		icon = GFX_
+		prerequisite = { 
+            focus = DDR_a_free_society
+		}
+        prerequisite = { 
+			focus = DDR_Detente
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 4
+		y = 7
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = DDR_look_to_the_yugoslavian_model
+		icon = GFX_goal_befriend_communist_YUG
+        mutually_exclusive = {focus = DDR_trust_in_the_west }
+		prerequisite = { 
+            focus = DDR_Begin_western_negotiations
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 5
+		y = 8
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = DDR_trust_in_the_west
+		icon = GFX_
+        mutually_exclusive = {focus = DDR_look_to_the_yugoslavian_model }
+		prerequisite = { 
+            focus = DDR_Begin_western_negotiations
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 3
+		y = 8
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = DDR_mutual_reunification
+		icon = GFX_
+		prerequisite = { 
+            focus = DDR_trust_in_the_west
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 3
+		y = 9
 
 
 		cost = 5
@@ -907,6 +1131,63 @@ focus = {
 	}
 	
 	focus = {
+		id = DDR_reign_in_the_police
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_dissolve_the_demokratischer_block
+		}
+		prerequisite = { 
+			focus = DDR_emphasise_union_individuality
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 2
+		y = 4	
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DDR_halt_mandatory_military_service
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_reign_in_the_police
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 1
+		y = 5	
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
 		id = DDR_spd_supremacy
 		icon = GFX_
 		prerequisite = { 
@@ -933,15 +1214,40 @@ focus = {
 		
 		}
 	}
+
+focus = {
+		id = DDR_a_free_society
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_reign_in_the_police
+            focus = DDR_spd_supremacy
+		}
+		
+		relative_position_id = DDR_Volkskammer
+		x = 3
+		y = 5
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
 	
 	focus = {
 		id = DDR_recognise_the_Federal_Republic_of_Germany
 		icon = GFX_
 		prerequisite = { 
 			focus = DDR_spd_supremacy
-		}
-		mutually_exclusive = { 
-			focus = DDR_The_NDPD
 		}
 		relative_position_id = DDR_Volkskammer
 		x = 5
@@ -1102,79 +1408,6 @@ focus = {
 		}
 	}
 	
-	focus = {
-		id = DDR_The_NDPD
-		icon = GFX_Goal_NDPD
-		x = 7
-		y = 5
-		prerequisite = { 
-			focus = DDR_spd_supremacy
-		}
-		mutually_exclusive = { 
-			focus = DDR_recognise_the_Federal_Republic_of_Germany
-		}
-		available = {
-        has_country_flag = DDR_wehrmacht_generals
-		}
-        relative_position_id = DDR_Volkskammer
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		custom_effect_tooltip = DDR_Lothar_TT
-		hidden_effect = {
-		create_country_leader = {
-	    name = "Lothar Bolz"
-	    desc = ""
-	    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	    expire = "1965.1.1"
-	    ideology = anti_revisionism
-	    traits = {	
-		
-	          }
-           }
-		   }
-		set_party_name = { 
-        ideology = communism 
-        long_name = DDR_communism_party_ndpd_long 
-        name = DDR_communism_party_ndpd
-            }		
-        complete_national_focus = DDR_loyalty_to_moscow 			
-		}
-	}
-	
-	focus = {
-		id = DDR_socialism_with_nationalistic_attributes
-		icon = GFX_
-		x = 8
-		y = 6
-		prerequisite = { 
-			focus = DDR_The_NDPD
-		}
-        relative_position_id = DDR_Volkskammer
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-		
-		}
-	}
-	
-	
 	
 	##Military##
 	
@@ -1311,6 +1544,63 @@ focus = {
 		
 		}
 	}
+
+focus = {
+		id = DDR_imitate_soviet_tactics
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_requisition_soviet_tanks
+		}
+
+		relative_position_id = DDR_Form_the_NVA
+		x = -3
+		y = 3
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = DDR_a_new_german_military
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_requisition_soviet_tanks
+		}
+        prerequisite = { 
+			focus = DDR_prussian_military_tradition
+		}
+
+		relative_position_id = DDR_Form_the_NVA
+		x = -1
+		y = 3
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
 	
 	focus = {
 		id = DDR_Resist_soviet_influence
@@ -1324,6 +1614,61 @@ focus = {
 		relative_position_id = DDR_Form_the_NVA
 		x = 2
 		y = 1
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = DDR_use_ww2_gun_trucks
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_Resist_soviet_influence
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = 2
+		y = 2
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = DDR_look_to_the_old_ways
+		icon = GFX_
+		prerequisite = { 
+			focus = DDR_use_ww2_gun_trucks
+		}
+        prerequisite = { 
+			focus = DDR_prussian_military_tradition
+		}
+		relative_position_id = DDR_Form_the_NVA
+		x = 1
+		y = 3
 
 
 		cost = 5
