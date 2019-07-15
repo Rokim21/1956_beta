@@ -94,6 +94,11 @@ spriteTypes = {
 		name = "GFX_Goal_Reject_Soviet_control"
 		texturefile = "gfx/interface/goals/ddr/Goal_Reject_Soviet_control.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_Goal_berlin_wall"
+		texturefile = "gfx/interface/goals/ddr/Goal_berlin_wall.dds"
+	}
 
 
 }
