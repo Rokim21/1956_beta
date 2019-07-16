@@ -57,16 +57,16 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
+	democratic = 15
 	fascism = 30
-	communism = 15
-	neutrality = 50
+	communism = 50
+	neutrality = 5
 }
 
 
@@ -85,24 +85,13 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SOV/r56_Portrait_SOV_Vasily_Danilovich_Sokolovsky.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = stalinism
 	traits = {
 	Marshal_of_the_ussr
 	Soviet_military_administrator
 	}
 }
 
-create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"	 
-	picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
-		exiled # He left in 1933 so he should still be exiled
-	}
-}
 
 ### Ship Variants ###
 ## 1936 Start ##

@@ -1,4 +1,4 @@
-DDR = {
+gdr = {
     color = rgb { 176 17 17 }
     color_ui = rgb { 176 17 17 }
 }

@@ -1,7 +1,7 @@
 ﻿l_english:
  
  #DDR
- DDR_communism:0 "German Democratic Republic"
- DDR_communism_DEF:0 "The German Democratic Republic"
- DDR_neutrality:0 "Soviet Occupation Zone"
- DDR_neutrality_DEF:0 "The Soviet Occupation Zone"
+ DDR_communism:0 "Soviet Occupation Zone"
+ DDR_communism_DEF:0 "The Soviet Occupation Zone"
+ gdr_communism:0 "German Democratic Republic"
+ gdr_communism_DEF:0 "The German Democratic Republic"

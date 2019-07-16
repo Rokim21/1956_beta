@@ -99,6 +99,11 @@ spriteTypes = {
 		name = "GFX_Goal_berlin_wall"
 		texturefile = "gfx/interface/goals/ddr/Goal_berlin_wall.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_Goal_DDR_FDGB"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR_FDGB.dds"
+	}
 
 
 }

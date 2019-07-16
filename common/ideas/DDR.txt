@@ -38,7 +38,6 @@ DDR_a_divided_nation = {
 			allowed = {
 			    always = no	
 				tag = DDR
-				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
@@ -47,7 +46,7 @@ DDR_a_divided_nation = {
 				 				 
 			}
 		}
-		
+			
 	DDR_Pieck = {
 			picture = Pieck
 			allowed = {
@@ -64,7 +63,7 @@ DDR_a_divided_nation = {
 		}
 		
 	DDR_reform = {
-			picture = haven_of_tolerance
+			picture = hol_haven_of_tolerance
 			allowed = {
 			    always = no	
 				tag = DDR
@@ -83,7 +82,6 @@ DDR_War_torn_country = {
 			allowed = {
 			    always = no	
 				tag = DDR
-				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
@@ -102,7 +100,6 @@ DDR_War_torn_country_2 = {
 			allowed = {
 			    always = no	
 				tag = DDR
-				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
@@ -116,7 +113,7 @@ DDR_War_torn_country_2 = {
 			}
 		}	
 
-DDR_stasi = {
+    DDR_stasi = {
 			picture = ddr_Stasi
 			allowed = {
 			    always = no	
@@ -132,8 +129,9 @@ DDR_stasi = {
 			political_advisor_cost_factor = 0.15	
 			}
 		}		
-   }
    
+
+   }
   
   
    political_advisor = {

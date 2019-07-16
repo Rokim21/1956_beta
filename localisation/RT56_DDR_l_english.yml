@@ -1,21 +1,19 @@
 ﻿l_english:
 ################################### COUTRY STUFF            \n   §H§!
 
- DDR_neutrality_party:0 "SMAD"
- DDR_neutrality_party_long:0 "Sowjetische Militärverwaltung in Deutschland"
- DDR_fascism_party:0 "NSDAP"
+ DDR_neutrality_party:0 "NDPD"
+ DDR_neutrality_party_long:0 "National-Demokratische Partei Deutschlands"
+ DDR_fascism_party:0 "NSDAP Remnants"
  DDR_fascism_party_long:0 "Die nationalsozialistische deutsche Arbeiterpartei"
  DDR_democratic_party:0 "SPD"
  DDR_democratic_party_long:0 "Sozialdemokratische Partei in der DDR"
- DDR_communism_party:0 "KPD"
- DDR_communism_party_long:0 "Kommunistische Partei Deutschlands"
+ DDR_communism_party:0 "SMAD"
+ DDR_communism_party_long:0 "Sowjetische Militärverwaltung in Deutschland"
  DDR_communism_party_sed_long:0 "Sozialistische Einheitspartei Deutschlands"
  DDR_communism_party_sed:0 "SED"
  DDR_democratic_party_ldpd_long:0 "Liberal Demokratische Partei Deutschlands"
  DDR_democratic_party_ldpd:0 "LDPD"
- DDR_communism_party_ndpd:0 "NDPD"
- DDR_communism_party_ndpd_long:0 "National-Demokratische Partei Deutschlands"
-
+ 
 ################################### Focuses                 \n   §H§!
 
  DDR_Ostzone:0 "Ostzone"
@@ -37,8 +35,6 @@
 
  DDR_Das_Aufraumen:0 "Das Aufräumen"
 
- DDR_The_NDPD:0 "The NDPD"
-
  DDR_formation_of_the_Ministerium_fur_Staatssicherheit:0 "£army_experience Form the Ministerium Für Staatssicherheit"
 
  DDR_loyalty_to_moscow:0 "Reafirm Loyalty to Moscow"
@@ -54,7 +50,9 @@
  DDR_Hardline_SED:0 "Hardline SED"
  
  DDR_Errect_the_Berlin_Wall:0 "Errect the Berlin Wall"
-
+ 
+ DDR_Formalise_the_FDGB:0 "Formalise the FDGB
+ 
  ################################### Flags                \n   §H§!
 
  DDR_constitution_sed:0 "The Constitution of the Hardline SED"
@@ -75,6 +73,7 @@
  Ulbricht:0 "Walter Ulbricht"
  DDR_stasi:0 "The Stasi"
  DDR_reform:0 "Westalgia"
+ DDR_under_the_watchful_eye_of_the_ussr:0 "Under the Watchful Eye of the USSR"
 
 
 ################################### Events                  \n   §H§!
@@ -98,6 +97,8 @@
 ################################### Other Stuff             \n   §H§!
  DDR_generic_light_aircraft_manufacturer:0 "Bücker Flugzeugbau"
  DDR_generic_medium_aircraft_manufacturer:0 "Arado"
+ 
+ DDR_Soviet_friendship:0 "Society for German-Soviet Friendship"
 
  ################################### ToolTips           \n   §H§!
  DDR_Ostzone_tt:0 "§RWe will start the process of preparing the Occupation Zone for self governance under Soviet supervision. \n§!"
@@ -105,7 +106,6 @@
  DDR_denazi:0 "Replace §YDenazification§! with §YSuccessful Denazification§! \n Effective change: \n Political Power Gain: §G+15%§! \n Weekly Stability: §G+2.00%§! \n Daily Fascism Support: §G-0.05§!"
  DDR_stasi_tt:0 "Forms the §YFelix Dzerzhinsky Guards Regiment 1§! and §YFelix Dzerzhinsky Guards Regiment 2§! in §YBerlin§!\n"
  DDR_grotewohl_tt:0 "§YOtto Grotewohl Becomes the Chairman of the SED§!"
- DDR_Lothar_TT:0 "§YLothar Bolz Becomes the Chairman of the SED§! \n"
  DDR_ulbricht_leader_TT:0 "§YWalter Ulbricht Becomes the Chairman of the SED§! \n"
  DDR_Kulz:0 "§YWilhelm külz Becomes the Chairman of the SED§! \n"
  DDR_Berlin_wall_tt:0 "Adds §Y5 Land Forts§! in §YEast Berlin§! \n"
@@ -116,3 +116,4 @@
  DDR_Fascist_Raid:0 "Crackdown on National Socialists"
  DR_Fascist_Raid_desc:0 "Anti-Fascist Raid"
  DDR_Set_up_silence_camps:0 "Set up Silence Camps"
+ 
