@@ -200,13 +200,13 @@ focus = {
 		}
 		create_country_leader = {
 	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"	 
+	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
 		#stalins_puppet
-		exiled 
+		exiled
 	}
 }
 		}
@@ -286,7 +286,7 @@ focus = {
 		y = 2
 
 
-		cost = 5.8	
+		cost = 5.8
 
 		ai_will_do = {
 			factor = 1
@@ -491,7 +491,7 @@ focus = {
 
 	focus = {
 		id = DDR_destalinization
-		icon = GFX_
+		icon = gfx_fifth_column
 		mutually_exclusive = {focus = DDR_condemn_revisionism}
 		prerequisite = {
 			focus = DDR_aid_cuba
@@ -800,7 +800,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		
+
         add_autonomy_ratio = {
 		   value = -0.1
 		   localisation = DDR_Soviet_friendship
@@ -1296,11 +1296,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-        add_stability = 0.05
+    custom_effect_tooltip = DDR_fdgb_tt
+    add_stability = 0.05
 		add_popularity = {
-            ideology = communism
-            popularity = 0.05
-            }
+      ideology = communism
+      popularity = 0.05
+      }
 		}
 	}
 

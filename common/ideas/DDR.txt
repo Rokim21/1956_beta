@@ -2,90 +2,90 @@ ideas = {
     country = {
     DDR_Denazification = {
 			picture = generic_purge
-			allowed = {		
+			allowed = {
 				tag = DDR
 				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
 				 fascism_drift = -0.05
 				 stability_weekly = -0.01
-                 political_power_factor = -0.1			 
+                 political_power_factor = -0.1
 			}
 		}
 
 DDR_Denazification_succesful = {
 			picture = generic_purge
 			allowed = {
-			    always = no	
+			    always = no
 				tag = DDR
 				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
 				 fascism_drift = -0.1
 				 stability_weekly = 0.01
-                 political_power_factor = 0.05				 
+                 political_power_factor = 0.05
 			}
 		}
-		
+
 DDR_a_divided_nation = {
 			picture = ddr_split
 			allowed = {
-			    always = no	
+			    always = no
 				tag = DDR
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
-				 				 
+
 			}
 		}
-			
+
 	DDR_Pieck = {
 			picture = Pieck
 			allowed = {
-			    always = no	
+			    always = no
 				tag = DDR
 				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
-			stability_factor = 0.10		 				 
+			stability_factor = 0.10
 			}
 		}
-		
+
 	DDR_reform = {
 			picture = hol_haven_of_tolerance
 			allowed = {
-			    always = no	
+			    always = no
 				tag = DDR
 				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
-			democratic_acceptance = 85			 				 
+			democratic_acceptance = 85
 			}
 		}
 
 DDR_War_torn_country = {
 			picture = ddr_war_torn
 			allowed = {
-			    always = no	
+			    always = no
 				tag = DDR
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
 		    production_speed_buildings_factor = -0.1
 			MONTHLY_POPULATION = -0.2
@@ -98,12 +98,12 @@ DDR_War_torn_country = {
 DDR_War_torn_country_2 = {
 			picture = ddr_war_torn
 			allowed = {
-			    always = no	
+			    always = no
 				tag = DDR
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
 		    production_speed_buildings_factor = 0.05
 			MONTHLY_POPULATION = -0.3
@@ -111,31 +111,31 @@ DDR_War_torn_country_2 = {
 			industrial_capacity_factory = -0.1
 			production_speed_arms_factory_factor = -0.1
 			}
-		}	
+		}
 
     DDR_stasi = {
 			picture = ddr_Stasi
 			allowed = {
-			    always = no	
+			    always = no
 				tag = DDR
 				has_government = communism
 			}
 			allowed_civil_war = {
 				has_government = communism
-			}			
+			}
 			modifier = {
 		    decryption_factor = 0.2
             political_power_factor = 0.1
-			political_advisor_cost_factor = 0.15	
+			political_advisor_cost_factor = 0.15
 			}
-		}		
-   
+		}
+
 
    }
-  
-  
+
+
    political_advisor = {
-   
+
    Ulbricht = {
             picture = DDR_Ulbricht
 			allowed = {
@@ -149,6 +149,35 @@ DDR_War_torn_country_2 = {
 				factor = 0.5
 			}
 		}
-  
-   }  
+  }
+
+industrial_concern = {
+
+ fdgb = {
+   picture = DDR_fdgb
+   cost = 50
+     allowed = {
+       original_tag = DDR
+      }
+     available = {
+       has_completed_focus = DDR_Formalise_the_FDGB
+     }
+     research_bonus = {
+       industry = 0.1
+       synth_resources = 0.05
+     }
+     traits = { Union_federation }
+   }
+
+  veb_mdh = {
+  picture = generic_electronics_concern_1
+  cost = 150
+        removal_cost = 10
+
+        research_bonus = {
+          electronics = 0.15
+        }
+        traits = { electronics_concern }
+    }
+  }
 }
