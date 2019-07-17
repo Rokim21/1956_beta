@@ -166,7 +166,7 @@ industrial_concern = {
        industry = 0.1
        synth_resources = 0.05
      }
-     traits = { Union_federation }
+     traits = { industrial_concern }
    }
 
   veb_mdh = {

@@ -105,6 +105,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ddr/Goal_DDR_FDGB.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_Goal_FDJ"
+		texturefile = "gfx/interface/goals/ddr/Goal_FDJ.dds"
+	}	
+
 
 }
 

@@ -636,8 +636,8 @@ focus = {
 	}
 
 	focus = {
-		id = DDR_Brigaden_der_freundschaft
-		icon = GFX_
+		id = DDR_Freie_Deutsche_Jugend
+		icon = GFX_Goal_FDJ
 		prerequisite = {
 			focus = DDR_anti_imperialist_solidarity
             focus = DDR_a_free_society
