@@ -398,7 +398,12 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_report_event_picture_athos_mount"
 		texturefile = "gfx/event_pictures/event_picture_athos_mount.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_report_event_Stalin_dead"
+		texturefile = "gfx/event_pictures/report_event_Stalin_dead.dds"
+	}
 }
 
 

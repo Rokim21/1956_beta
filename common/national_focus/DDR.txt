@@ -752,11 +752,40 @@ focus = {
 	focus = {
 		id = DDR_break_the_border
 		icon = GFX_
+		mutually_exclusive = {focus = DDR_assist_Reimann }
 		prerequisite = {
 			focus = DDR_anti_nato_propaganda
 		}
 		relative_position_id = DDR_Volkskammer
 		x = -6
+		y = 8
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = DDR_assist_Reimann
+		icon = GFX_
+		mutually_exclusive = {focus = DDR_break_the_border}
+		icon = GFX_ 
+		prerequisite = {
+			focus = DDR_anti_nato_propaganda
+		}
+		relative_position_id = DDR_Volkskammer
+		x = -8
 		y = 8
 
 
