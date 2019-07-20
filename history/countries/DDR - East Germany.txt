@@ -53,7 +53,6 @@ set_technology = {
 
 add_ideas = {
 	DDR_War_torn_country
-	DDR_a_divided_nation
 }
 
 set_politics = {

@@ -57,6 +57,10 @@
 
  DDR_destalinization:0 "Destalinization"
 
+ DDR_emphasise_union_individuality:0 "Emphasise Union Individuality"
+
+ DDR_maintain_party_control_over_the_unions:0 "Maintain Party Control Over the Unions"
+
  ################################### Flags                \n   §H§!
 
  DDR_constitution_sed:0 "The Constitution of the Hardline SED"
@@ -95,6 +99,7 @@
  Chairman_of_the_Socialist_Unity_Party:0 "Chairman of the Socialist Unity Party"
  Marshal_of_the_ussr:0 "Marshal of the Soviet Union"
  Soviet_military_administrator:0 "Soviet Military Administrator"
+ Socialist_old_guard:0 "Socialist Old Guard"
 
 ################################### Other Stuff             \n   §H§!
  DDR_generic_light_aircraft_manufacturer:0 "Bücker Flugzeugbau"

@@ -205,8 +205,10 @@ focus = {
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-		#stalins_puppet
+		stalins_puppet
 		exiled
+		POL_Union_Boss
+		Socialist_old_guard
 	}
 }
 		}
@@ -522,7 +524,7 @@ focus = {
 
 	focus = {
 		id = DDR_condemn_revisionism
-		icon = GFX_
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		mutually_exclusive = {focus = DDR_destalinization}
 		prerequisite = {
 			focus = DDR_aid_cuba
@@ -556,7 +558,7 @@ focus = {
 
 	focus = {
 		id = DDR_albanian_partnership
-		icon = GFX_
+		icon = GFX_goal_befriend_communist_ALB
 		mutually_exclusive = {focus = DDR_destalinization}
 		prerequisite = {
 			focus = DDR_condemn_revisionism
@@ -584,7 +586,7 @@ focus = {
 
 	focus = {
 		id = DDR_an_equal_to_Russia
-		icon = GFX_
+		icon = GFX_focus_generic_russian_deal_communist
 		prerequisite = {
 			focus = DDR_condemn_revisionism
 			focus = DDR_destalinization
@@ -751,7 +753,7 @@ focus = {
 
 	focus = {
 		id = DDR_break_the_border
-		icon = GFX_
+		icon = GFX_focus_generic_provoke_border_clashes
 		mutually_exclusive = {focus = DDR_assist_Reimann }
 		prerequisite = {
 			focus = DDR_anti_nato_propaganda
@@ -862,6 +864,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+        add_political_power = 50
 
 		}
 	}
@@ -1223,7 +1226,7 @@ focus = {
 
 	focus = {
 		id = DDR_spd_supremacy
-		icon = GFX_
+		icon = GFX_focus_generic_socialist_action
 		prerequisite = {
 			focus = DDR_dissolve_the_demokratischer_block
 			focus = DDR_quinquennial_elections
@@ -1361,7 +1364,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+        add_political_power = -75
+		add_stability = 0.02
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
 		}
 	}
 
@@ -1391,13 +1399,16 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+        add_political_power = 50
+		
+		consumer_goods_factor = 0.03
+		line_change_production_efficiency_factor = -0.1
 		}
 	}
 
 	focus = {
 		id = DDR_reinforce_the_Zonengrenze
-		icon = GFX_
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = {
 			focus = DDR_loyalty_to_moscow
 		}
@@ -1571,7 +1582,7 @@ focus = {
 
 	focus = {
 		id = DDR_requisition_soviet_tanks
-		icon = GFX_
+		icon = GFX_sca_focus_license_tanks
 		prerequisite = {
 			focus = DDR_Soviet_military_control
 		}

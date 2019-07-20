@@ -33,20 +33,6 @@ DDR_Denazification_succesful = {
 			}
 		}
 
-DDR_a_divided_nation = {
-			picture = ddr_split
-			allowed = {
-			    always = no
-				tag = DDR
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			modifier = {
-
-			}
-		}
-
 	DDR_Pieck = {
 			picture = Pieck
 			allowed = {
