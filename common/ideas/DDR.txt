@@ -116,6 +116,55 @@ DDR_War_torn_country_2 = {
 			}
 		}
 
+		DDR_union_control = {
+			picture = ddr_
+			allowed = {
+			    always = no
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+		    consumer_goods_factor = -0.03
+		    line_change_production_efficiency_factor = -0.15
+			drift_defence_factor = 0.1	
+			}
+		}
+
+		DDR_Demanding_qoutas = {
+			picture = ddr_
+			allowed = {
+			    always = no
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+			industrial_capacity_factory = 0.1
+			drift_defence_factor = 0.1
+			}
+		}
+
+		DDR_Decentrilized_Parties = {
+			picture = ddr_
+			allowed = {
+			    always = no
+				tag = DDR
+				has_government = communism
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+			fascism_drift = 0.05
+			political_power_gain = 0.05
+			}
+		}
+
 
    }
 

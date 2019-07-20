@@ -438,8 +438,8 @@ focus = {
 	}
 
 	focus = {
-		id = DDR_aid_mozambique
-		icon = GFX_Goal_Assist_Mozambique
+		id = DDR_Participate_in_the_CMEA
+		icon = GFX_
 		prerequisite = {
 			focus = DDR_anti_imperialist_solidarity
 		}
@@ -465,8 +465,8 @@ focus = {
 	}
 
 	focus = {
-		id = DDR_aid_cuba
-		icon = GFX_Goal_Assist_Cuba
+		id = DDR_aid_vietnam
+		icon = GFX_
 		prerequisite = {
 			focus = DDR_anti_imperialist_solidarity
 		}
@@ -496,10 +496,10 @@ focus = {
 		icon = gfx_fifth_column
 		mutually_exclusive = {focus = DDR_condemn_revisionism}
 		prerequisite = {
-			focus = DDR_aid_cuba
+			focus = DDR_aid_vietnam
 		}
 		prerequisite = {
-			focus = DDR_aid_mozambique
+			focus = DDR_Participate_in_the_CMEA
 		}
 
 		relative_position_id = DDR_Volkskammer
@@ -527,10 +527,10 @@ focus = {
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		mutually_exclusive = {focus = DDR_destalinization}
 		prerequisite = {
-			focus = DDR_aid_cuba
+			focus = DDR_Participate_in_the_CMEA
 		}
 		prerequisite = {
-			focus = DDR_aid_mozambique
+			focus = DDR_aid_vietnam
 		}
 		prerequisite = {
 			focus = DDR_a_strong_policeforce
@@ -695,7 +695,7 @@ focus = {
 
 	focus = {
 		id = DDR_crackdown_on_migration_west
-		icon = GFX_
+		icon = GFX_Goal_DDR_target_leavers
 		prerequisite = {
 			focus = DDR_a_strong_policeforce
 		}
@@ -865,7 +865,15 @@ focus = {
 
 		completion_reward = {
         add_political_power = 50
-
+        swap_ideas = {
+		    remove_idea = DDR_union_control
+            add_idea = DDR_Demanding_qoutas
+		}
+		add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+                }
 		}
 	}
 
@@ -1136,7 +1144,6 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
 		}
 	}
 
@@ -1163,7 +1170,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+        add_ideas = DDR_Decentrilized_Parties
 		}
 	}
 
@@ -1339,7 +1346,7 @@ focus = {
 
 	focus = {
 		id = DDR_emphasise_union_individuality
-		icon = GFX_
+		icon = GFX_Goal_DDR_Free_unions
 		mutually_exclusive = {focus = DDR_maintain_party_control_over_the_unions }
 		prerequisite = {
 			focus = DDR_Formalise_the_FDGB
@@ -1375,7 +1382,7 @@ focus = {
 
 	focus = {
 		id = DDR_maintain_party_control_over_the_unions
-		icon = GFX_
+		icon = GFX_Goal_DDR_Control_Unions
 		mutually_exclusive = {focus = DDR_emphasise_union_individuality }
 		prerequisite = {
 			focus = DDR_Formalise_the_FDGB
@@ -1399,10 +1406,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-        add_political_power = 50
-		
-		consumer_goods_factor = 0.03
-		line_change_production_efficiency_factor = -0.1
+        add_political_power = 20
+		add_ideas = DDR_union_control
 		}
 	}
 
@@ -1805,6 +1810,26 @@ focus = {
 
 	###industry###
 
+    focus = {
+		id = DDR_nigga
+		icon = GFX_ 
+		x = 40
+		y = 0
 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
 
 }

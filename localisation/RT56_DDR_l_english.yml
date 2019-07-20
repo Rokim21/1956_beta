@@ -61,6 +61,10 @@
 
  DDR_maintain_party_control_over_the_unions:0 "Maintain Party Control Over the Unions"
 
+ DDR_increase_work_qoutas:0 "Increase Work Qoutas"
+
+ DDR_dissolve_the_demokratischer_block:0 "Dissolve the Nationale Front"
+
  ################################### Flags                \n   §H§!
 
  DDR_constitution_sed:0 "The Constitution of the Hardline SED"
@@ -76,7 +80,6 @@
  DDR_Denazification_succesful:0 "Successful Denazification"
  DDR_War_torn_country:0 "War Torn Country"
  DDR_War_torn_country_2:0 "War Torn Country"
- DDR_a_divided_nation:0"A Divided Nation"
  DDR_Pieck:0 "Wilhelm Pieck"
  Ulbricht:0 "Walter Ulbricht"
  DDR_stasi:0 "The Stasi"
@@ -84,6 +87,9 @@
  DDR_under_the_watchful_eye_of_the_ussr:0 "Under the Watchful Eye of the USSR"
  fdgb:0 "The FDGB"
  veb_mdh:0 "VEB Metalldrücker Halle"
+ DDR_union_control:0 "Union Control"
+ DDR_Demanding_qoutas:0 "Demanding Qoutas"
+ DDR_Decentrilized_Parties:0 "Decentralised Parties"
 
 
 ################################### Events                  \n   §H§!

@@ -108,6 +108,21 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_Goal_FDJ"
 		texturefile = "gfx/interface/goals/ddr/Goal_FDJ.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_Goal_DDR_target_leavers"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR_target_leavers.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_Goal_DDR_Free_unions"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR_Free_unions.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_Goal_DDR_Control_Unions"
+		texturefile = "gfx/interface/goals/ddr/Goal_DDR_Control_Unions.dds"
 	}	
 
 
